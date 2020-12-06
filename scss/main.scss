@@ -1,0 +1,19 @@
+@import './variable';
+@import './common/globals.scss';
+@import './header.scss';
+@import './templates/promo.scss';
+@import './templates/system.scss';
+@import './templates/info.scss';
+@import './templates/solutions.scss';
+@import './templates/reports.scss';
+@import './templates/reviews.scss';
+@import './templates/news.scss';
+@import './templates/faq-questions.scss';
+@import './templates/request.scss';
+@import './templates/contact.scss';
+@import './footer.scss';
+
+//components
+@import './components/btn.scss';
+@import './components/dots-li.scss';
+@import './components/swiper.scss';

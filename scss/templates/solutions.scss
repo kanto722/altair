@@ -1,0 +1,107 @@
+@import './variable';
+@import './common/media';
+
+//solutions
+.solutions {
+    padding-bottom: 120px;
+}
+.solutions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+		&__title {
+            h3 {
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 120%;
+                text-align: center;
+                text-transform: uppercase;
+                color: $title;
+            }
+		}
+
+		&__content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            // max-width: 1228px;
+            padding-top: 64px;
+
+            &__item {
+                background: linear-gradient(180deg, #E3E6F3 0%, #FFFFFF 100%);    
+                box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px rgba(166, 171, 189, 0.5);
+                border-radius: 10px;
+                padding: 68px 56px 50px 18px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 20px;
+            }
+            &__item:nth-child(3) {
+                margin-right: 0;
+            }
+            &__item:nth-child(4) {
+                margin-top: 30px;
+            }
+            &__item:nth-child(5) {
+                margin-top: 30px;
+            }
+            &__item:nth-child(6) {
+                margin-top: 30px;
+                margin-right: 0;
+            }
+		}
+}
+.solutions-item {
+
+		&__img {
+            padding-bottom: 28px;
+		}
+
+		&__title {
+            padding-right: 60px;
+            padding-bottom: 20px;
+            h3 {
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 120%;
+                color: $title;
+            }
+		}
+
+		&__text {
+            padding-bottom: 60px;
+            p {
+                max-width: 322px;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 120%;
+                color: $gray;
+            }
+		}
+
+		&__btn {
+            a {
+                outline: none;
+                text-decoration: none;
+                cursor: pointer;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 18px;
+                color: $text;
+                background: #DFE3F2;
+                box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px rgba(166, 171, 189, 0.5);
+                border-radius: 10px;
+                padding: 20px 30px;
+            }
+		}
+}

@@ -1,0 +1,125 @@
+@import './variable';
+@import './common/media';
+
+
+//info
+.info {
+    padding-bottom: 120px;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+		&__title {
+            display: flex;
+            flex-direction: row;
+            h3 {
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 120%;
+                text-transform: uppercase;
+                color: $title;
+                margin-right: 30px;
+            }
+            img {
+                object-fit: cover;
+            }
+		}
+
+		&__content {
+            padding-top: 72px;
+            display: flex;
+            flex-direction: row;
+			&_wrap {
+                background: #0E4A7E;
+                border-radius: 10px;
+                margin-right: 20px;
+            }
+            &_wrap:nth-child(2) {
+                margin-right: 0;
+            }
+            &_item {
+                width: 604px;
+                background-image: url(../../css/img/info-fon.png);
+                background-repeat: no-repeat;
+                background-size:  100% 100%;
+                border-radius: 10px;
+                padding: 49px 40px 32px 34px;
+            }
+
+            &_item-title {
+                h3 {
+                    font-family: HelveticaNeueCyr;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 120%;
+                    color: $white;
+                }
+
+            }
+
+            &_item-elem1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 34px;
+                &_number {
+                    h3 {
+                        font-family: HelveticaNeueCyr;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 64px;
+                        line-height: 120%;
+                        color: $white;
+                    }
+                    p {
+                        font-family: HelveticaNeueCyr;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 24px;
+                        line-height: 120%;
+                        color: $white;
+                    }
+                }
+                &_rotate {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-right: 75px;
+                    h3 {
+                        display: flex;
+                        font-family: HelveticaNeueCyr;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 48px;
+                        line-height: 120%;
+                        text-transform: uppercase;
+                        color: $white;
+                    }
+                    img {
+                        position: absolute;
+                        transform: translateY( -36px);
+                    }
+                }
+            }
+
+
+            &_item-elem2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-top: 9px;
+                p {
+                    font-family: HelveticaNeueCyr;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: $white;
+                }
+            }
+		}
+}

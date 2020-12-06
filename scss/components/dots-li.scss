@@ -1,0 +1,11 @@
+
+//точки для li
+.system-shape {
+    li {
+        list-style: outside;
+        color: $title;
+        span {
+            color: $gray;
+        }
+    }
+}

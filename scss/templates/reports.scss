@@ -1,0 +1,115 @@
+@import './variable';
+@import './common/media';
+
+.reports {
+padding-bottom: 120px;
+    &__content {
+        &_text {
+            display: flex;
+            flex-direction: column;
+            margin-right: 21px;
+            p {
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 120%;
+                color: $text;
+            }
+            p:nth-child(3) {
+                padding-top: 20px;
+            }
+            img {
+                padding-top: 70px;
+                max-width: 478px;
+                object-fit: cover;
+            }
+        }
+
+        &_slider {
+            position: relative;
+        }
+    }
+
+    &__bottom-title {
+        h3 {
+            font-family: HelveticaNeueCyr;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 120%;
+            color: $text;
+        }
+    }
+
+    &__bottom-content {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        &_elem1 {
+            margin-right: 20px;
+            p {
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 120%;
+                color: $text;
+            }
+        }
+
+        &_elem2 {
+            p {
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 120%;
+                color: $text;
+            }
+        }
+    }
+}
+
+.reports-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+        h3 {
+            font-family: HelveticaNeueCyr;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: $title;
+            padding-bottom: 20px;
+        }
+        p {
+            font-family: HelveticaNeueCyr;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            color: $text;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__bottom {
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

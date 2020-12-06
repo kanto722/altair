@@ -1,0 +1,117 @@
+@import './variable';
+@import './common/media';
+
+
+//faq-question
+.faq-question {
+    &__content {
+      max-width: 1224px;
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 120px;
+
+    }
+  }
+  .container {
+      width: 100%;
+  }
+  .faq-questions {
+    display: flex;
+    // border-top: 1px solid #BDBDBD;
+    // border-bottom: 1px solid #BDBDBD;
+    transition: 0.2s;
+    max-width: 1224px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 120px;
+
+      &__content {
+        width: 100%;
+        padding-left: 44px;
+        padding: 42px 15px 42px 44px;
+        transition: 0.6s;
+      }
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+        transition: 0.5s;
+    
+        span {
+          display: block;
+          font-family: HelveticaNeueCyr;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 120%;
+          color: $text;
+        }
+      }
+      &__toggle {
+        border-radius: 100%;
+        border: none;
+        padding: 0;
+        background: $title;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 45px;
+        transition: 0.5s;
+        width: 54px;
+        height: 54px;
+        color: $white;
+      }
+    
+      &__hidden-content {
+        max-width: 910px;
+        max-height: 0;
+        transition: 0.8s;
+        overflow: hidden;
+        p {
+            font-family: HelveticaNeueCyr;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 120%;
+            color: $text;
+        }
+      }
+      &__text {
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        color: $text;
+      }
+      .faq-questions__item.open {
+        .faq-questions {
+          &__content {
+            padding: 0 15px 42px 44px;
+          }
+          &__title {
+            padding-top: 15px;
+            margin-bottom: 25px;
+          }
+          &__toggle {
+            transform: rotate(45deg);
+          }
+          &__hidden-content {
+            max-height: 900px;
+          }
+        }
+      }
+  }
+  .faq-questions__text:nth-child(1) {
+      padding-bottom: 20px;
+  }
+  .faq-questions__text:nth-child(5) {
+    padding-bottom: 20px;
+    }
+    .faq-questions__text:nth-child(9) {
+        padding-bottom: 20px;
+    }
+    .border {
+        border-top: 1px solid #BDBDBD;
+        border-bottom: 1px solid #BDBDBD;
+    }
