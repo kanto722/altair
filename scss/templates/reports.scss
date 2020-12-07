@@ -209,7 +209,18 @@ padding-bottom: 120px;
 }
 //480px
 @include media-mobile {
-
+.reports{
+    &-container {
+        &__title {
+            h3 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
 }
 //320px
 @include media-mobile-small {

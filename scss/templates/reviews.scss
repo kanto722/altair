@@ -123,6 +123,11 @@
         &__slider {
             height: 100%;
         }
+        &__title {
+            h3 {
+                font-size: 24px;
+            }
+        }
     }
     .swiper-slide{
         &_content {
