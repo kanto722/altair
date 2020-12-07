@@ -70,7 +70,6 @@
 .swiper-button-next {
     background-image: url(../css/img/svg/arrow-right.svg);
     transform: translateX(40px);
-
 }
 
 
@@ -78,8 +77,11 @@
     .swiper-container3 {
         max-width: 1180px;
     }
-}
+    .swiper-button-next {
+        transform: translateX(30px);
+    }
 
+}
 //1200px
 @include media-laptop {
     .swiper-container3 {
@@ -97,10 +99,14 @@
     }   
     .swiper-button-prev {
         background: none; 
+        display: none;
     }
     
     .swiper-button-next {
+        display: none;
         background: none;
+        transform: translateX(-20px);
+
     }
 }
 //767px
