@@ -55,3 +55,87 @@ cursor:pointer;
         max-height: 366px;
     }
 }
+
+
+//1200px
+@include media-laptop {
+    
+}
+//992px
+@include media-tablet-horizontal {
+    .promo{
+        background-image:  url(../../css/img/fon767.png);
+    }
+    .promo-container{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        &-content {
+            margin-right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            &__title {
+                padding-bottom: 20px;
+                h1 {
+                    font-size: 30px;
+                    max-width: 767px;
+                }
+            }
+            &__text {
+                text-align: left;
+                p {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        &-video {
+            margin-top: 60px;
+        }
+    }
+}
+//767px
+@include media-tablet {
+    .promo-container-content{
+        &__title {
+            h1 {
+                max-width: 460px;
+            }
+        }
+    }
+    .promo-container-video{
+        iframe {
+            max-width: 450px;
+            max-height: 250px;
+        }
+    }
+    .promo-container-video{
+        margin-top: 40px;
+    }
+}
+//480px
+@include media-mobile {
+    .promo-container-content{
+        &__text {
+            p {
+                font-size: 18px;
+            }
+        }
+        &__title {
+            h1 {
+                font-size: 20px;
+            }
+        }
+    }
+    .promo-container-video{
+        iframe {
+            max-width: 300px;
+            max-height: 180px;
+        }
+    }
+}
+//320px
+@include media-mobile-small {
+   
+}
