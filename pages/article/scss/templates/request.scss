@@ -113,13 +113,13 @@
 }
 //992px
 @include media-tablet-horizontal {
-    
-}
-//767px
-@include media-tablet {
     .request {
         padding-bottom: 50px;
     }
+}
+//767px
+@include media-tablet {
+
     .request-form {
         &__title {
             padding-bottom: 25px;

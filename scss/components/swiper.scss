@@ -1,6 +1,7 @@
+@import './variable';
+@import './common/media';
 
-
-//СЛАЙДЕР
+// //СЛАЙДЕР
 //первый слайдер
 .swiper-container1 {
     width: 604px;
@@ -61,14 +62,59 @@
     border-radius: 100%;
 }
 .swiper-button-prev {
-    background-image: url(../../css/img/svg/arrow-back.svg);
+    background-image: url(../css/img/svg/arrow-back.svg);
     transform: translateX(-40px);
 
 }
 
 .swiper-button-next {
-    background-image: url(../../css/img/svg/arrow-right.svg);
+    background-image: url(../css/img/svg/arrow-right.svg);
     transform: translateX(40px);
 
 }
 
+
+@include media-custom (1300px) {
+    .swiper-container3 {
+        max-width: 1180px;
+    }
+}
+
+//1200px
+@include media-laptop {
+    .swiper-container3 {
+        max-width: 972px;
+    }
+}
+//992px
+@include media-tablet-horizontal {
+    .swiper-container3 {
+        max-width: 767px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: none;
+    }   
+    .swiper-button-prev {
+        background: none; 
+    }
+    
+    .swiper-button-next {
+        background: none;
+    }
+}
+//767px
+@include media-tablet {
+    
+    .swiper-container3 {
+        max-width: 100%;
+    }
+}
+//480px
+@include media-mobile {
+
+}
+//320px
+@include media-mobile-small {
+   
+}
