@@ -209,9 +209,6 @@
 
 //1200px
 @include media-laptop {
-    .contact{
-        padding-top: 40px;
-    }
     .content{
         &__maps {
             img {
@@ -228,6 +225,9 @@
 }
 //992px
 @include media-tablet-horizontal {
+    .contact{
+        padding-top: 40px;
+    }
     .contact-container-title{
         padding-bottom: 30px;
         h3 {
@@ -340,9 +340,6 @@
 @include media-mobile {
     .contact-container-title{
         padding-bottom: 10px;
-        h3 {
-            font-size: 18px;
-        }
     }
     .content{
         &__text {
@@ -417,8 +414,4 @@
             }
         }
     }
-}
-//320px
-@include media-mobile-small {
-   
 }
