@@ -36,6 +36,10 @@ let mySwiper1 = new Swiper(slider1, {
   let mySwiper3 = new Swiper(slider3, {
     slidesPerView: 3,
     spaceBetween: 20,
+    autoplay: {
+      delay: 1500,
+    },
+    
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -44,4 +48,22 @@ let mySwiper1 = new Swiper(slider1, {
     lazy: {
       loadPrevNext: true,
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      670: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    }
   })
