@@ -6,12 +6,29 @@
 .promo-container {
 }
 .promo-title {
+    h2 {
+
+    }
+    p {
+
+    }
 }
 .promo-block {
 
 		&__content {
+            img {
+
+            }
 
 			&_text {
+                p {
+
+                }
+                a {
+                    input {
+
+                    }
+                }
 			}
 		}
 }
@@ -20,14 +37,29 @@
 .need-block {
 
 		&__title {
+            h2 {
+
+            }
+            img {
+
+            }
 		}
 
 		&__content {
 
 			&_item {
+                p {
+
+                }
 			}
 		}
 
 		&__btn {
+            a {
+                input {
+
+                }
+            }
 		}
 }
+

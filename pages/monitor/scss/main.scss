@@ -1,9 +1,18 @@
 @import './variable';
 @import './common/globals.scss';
 @import './header.scss';
+
+@import './templates/promo.scss';
+@import './templates/work.scss';
+@import './templates/car.scss';
+@import './templates/reviews.scss';
+@import './templates/branch.scss';
+@import './templates/more.scss';
 @import './templates/request.scss';
 @import './templates/contact.scss';
+
 @import './footer.scss';
 
 //components
 @import './components/btn.scss';
+@import './components/title.scss';
