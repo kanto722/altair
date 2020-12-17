@@ -22,7 +22,7 @@
 	box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px rgba(166, 171, 189, 0.5);
 	border-radius: 10px;
 	padding: 0px 0px 72px 104px;
-	margin-bottom: 138px;
+	margin-bottom: 130px;
 	max-width: 1020px;
 		&__left {
 			display: flex;
@@ -81,30 +81,212 @@
 			}
 		}
 }
-.car-questions {
+.car-item:nth-child(2) {
+	padding: 0px 0px 7px 104px;
 
+}
+
+.car-questions {
+	background: #FFFFFF;	
+	box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px rgba(166, 171, 189, 0.5);
+	border-radius: 10px;
+	margin-bottom: 130px;
 		&__content {
+			display: flex;
+			flex-direction: column;
+			transform: translateY(-68px);
+
 		}
 
 		&__item {
 		}
 
 		&__title {
+			span {
+
+			}
+			button {
+
+			}
 		}
 
 		&__toggle {
 		}
 
 		&__hidden-content {
+			p {
+
+			}
 		}
 
 		&__text {
 		}
 }
-.container {
+
+.car-block-title {
+	width: 102px;
+	height: 102px;
+	border-radius: 100%;
+	background: #0066B3;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 34px;
+	h2 {
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 48px;
+		line-height: 120%;
+		color: $white;
+	}
+	}
+.car-title-block {
+	p {
+		width: 470px;
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 120%;
+		color: $title;
+		text-transform: uppercase;
+		margin-bottom: 80px;
+	}
 }
+
+
+.container-car {
+	padding: 0px 0px 55px 104px;
+}
+
 .car-question {
 }
+
+
+.car-question {
+    &__content {
+      max-width: 1224px;
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 120px;
+
+    }
+  }
+  .container {
+      width: 100%;
+  }
+  .car-questions {
+    display: flex;
+    // border-top: 1px solid #BDBDBD;
+    // border-bottom: 1px solid #BDBDBD;
+    transition: 0.2s;
+    max-width: 1224px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 120px;
+
+      &__content {
+        width: 100%;
+        padding-left: 44px;
+        padding: 42px 15px 42px 44px;
+        transition: 0.6s;
+      }
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+        transition: 0.5s;
+    
+        span {
+          display: block;
+          font-family: HelveticaNeueCyr;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 120%;
+          color: $text;
+        }
+      }
+      &__toggle {
+        border-radius: 100%;
+        border: none;
+        padding: 0;
+        background: $title;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 45px;
+        transition: 0.5s;
+        width: 54px;
+        height: 54px;
+        color: $white;
+      }
+    
+      &__hidden-content {
+        max-width: 910px;
+        max-height: 0;
+        transition: 0.8s;
+        overflow: hidden;
+        p {
+            font-family: HelveticaNeueCyr;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 120%;
+            color: $text;
+        }
+      }
+      &__text {
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        color: $text;
+      }
+      .car-questions__item.open {
+        .car-questions {
+          &__content {
+            padding: 0 15px 42px 44px;
+          }
+          &__title {
+            padding-top: 15px;
+            margin-bottom: 25px;
+          }
+          &__toggle {
+            transform: rotate(45deg);
+          }
+          &__hidden-content {
+            max-height: 900px;
+          }
+        }
+      }
+  }
+  .car-questions__text:nth-child(1) {
+      padding-bottom: 20px;
+  }
+  .car-questions__text:nth-child(5) {
+    padding-bottom: 20px;
+    }
+    .car-questions__text:nth-child(9) {
+        padding-bottom: 20px;
+    }
+    .border {
+        border-top: 1px solid #BDBDBD;
+        border-bottom: 1px solid #BDBDBD;
+    }
+
+
+
+
+
+
+
+
+
 .car-block {
 }
 .reports {
