@@ -18,3 +18,4 @@ questionsBox.addEventListener('click', function (e) {
   });
   question.classList.add('open');
 });
+

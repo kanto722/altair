@@ -1,0 +1,13 @@
+@import './variable';
+@import './common/globals.scss';
+@import './header.scss';
+
+@import './templates/branch.scss';
+@import './templates/request.scss';
+@import './templates/contact.scss';
+
+@import './footer.scss';
+
+//components
+@import './components/btn.scss';
+@import './components/title.scss';

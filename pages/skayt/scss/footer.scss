@@ -1,0 +1,247 @@
+@import './variable';
+@import './common/media';
+
+//footer
+.footer {
+    background: $text;
+    padding-top: 66px;
+    padding-bottom: 111px;
+    height: calc(26vh + 100px);
+    &_number {
+        outline: none;
+        text-decoration: none;
+    }
+
+}
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // width: 100%;
+}
+.footer-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-logo {
+
+}
+.footer-logo-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 26px;
+    &__text {
+        h3 {
+            font-family: HelveticaNeueCyr;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 24px;
+            color: $white;
+            padding-bottom: 12px;
+        }
+        p {
+            font-family: HelveticaNeueCyr;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 13px;
+            color: $white;
+            opacity: 0.9;
+        }
+    }
+}
+.footer-logo-bottom {
+    p {
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 120%;
+        color: $white;
+    }
+}
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    &__elem1 {
+        margin-right: 95px;
+    }
+    li {
+        padding-bottom: 20px;
+    }
+    &__link {
+        outline: none;
+        text-decoration: none;
+        cursor: pointer;
+        color: $white;
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    &__elem2 {
+    }
+}
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer_number{
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: $white;
+    padding-bottom: 24px;
+}
+.footer-bottom {
+    padding-top: 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__web {
+        cursor: pointer;
+    }
+    &__policy {
+        cursor: pointer;
+        outline: none;
+        color: $white;
+        text-decoration-line: underline;
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
+.line2{    
+    height: 57px;
+    margin-right: 23px;
+    margin-left: 23px;
+    opacity: 0.5;
+    border: 1px solid #FFFFFF;
+}
+
+
+//1200px
+@include media-laptop {
+    .footer-row2 {
+        .footer-nav {
+        }
+    }
+}
+@include media-custom (1040px) {
+    .footer-nav{
+        &__elem1 {
+            margin-right: 20px;
+        }
+    }
+}
+//992px
+@include media-tablet-horizontal {
+    .footer {
+        padding-bottom: 22px;
+        height: 100%;
+    }
+    .footer-row {
+        flex-direction: column;
+    }
+    .footer-row2 {
+        justify-content: space-between;
+    }
+    .footer-logo {
+        margin-bottom: 38px;
+    }
+    .footer-nav{
+        &__elem1 {
+            margin-right: 12px;
+        }
+    }
+}
+//767px
+@include media-tablet {
+    
+}
+//480px
+@include media-mobile {
+    .footer {
+        padding-top: 20px;
+    }
+    .footer-row2 {
+        flex-direction: column;
+    }
+    .footer-contact {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &__elem1 {
+            margin-right: 0;
+        }
+    }
+    .line2 {
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 39px;
+    }
+    .footer-logo {
+        margin-bottom: 50px;
+    }
+    .footer-logo-top {
+        padding-bottom: 15px;
+        img {
+            width: 97px;
+        }
+        &__text {
+            h3 {
+                font-size: 16px;
+                padding-bottom: 2px;
+            }
+            p {
+                font-size: 8px;
+            }
+        }
+    }
+    .footer-logo-bottom {
+        p {
+            font-size: 16px;
+        }
+    }
+    .footer-nav{
+        margin-bottom: 50px;
+        li {
+            padding-bottom: 17px;
+        }
+    }
+    .footer-bottom {
+        padding-top: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__web {
+            order: 1;
+        }
+        &__policy {
+            order: 0;
+            margin-bottom: 50px;
+        }
+    }
+}
+//320px
+@include media-mobile-small {
+   
+}
