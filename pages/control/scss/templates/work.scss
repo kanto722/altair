@@ -1,0 +1,85 @@
+@import '../variable';
+@import '../common/media.scss';
+
+.work {
+}
+.work-container {
+    padding-top: 33px;
+    padding-bottom: 130px;
+}
+.work-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        margin-top: 24px;
+        object-fit: cover;
+    }
+}
+.work-block {
+    margin-top: 78px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1228px;
+}
+.work-block-left {
+    margin-right: 20px;
+}
+.work-block-left-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(180deg, #E3E6F3 0%, #FFFFFF 100%);
+    box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px rgba(166, 171, 189, 0.5);
+    border-radius: 10px;
+    padding: 22px 52px 11px 38px;
+    margin-bottom: 20px;
+    h2 {
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 120%;
+        margin-right: 35px;
+        color: $title;
+    }
+    p {
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        color: $text;
+    }
+}
+.work-block-left-item:nth-child(2) {
+    margin-bottom: 0px;
+}
+.work-block-item {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(180deg, #E3E6F3 0%, #FFFFFF 100%);
+    box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px rgba(166, 171, 189, 0.5);
+    border-radius: 10px;
+    padding: 22px 104px 32px 36px;
+    p {
+        width: 396px;
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        color: $text;
+    }
+    h2 {
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 120%;
+        margin-right: 35px;
+        color: $title;
+    }
+}
