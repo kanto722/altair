@@ -3,6 +3,7 @@
 
 .branch {
 	padding-top: 100px;
+	padding-bottom: 96px;
 }
 
 .branch-container {
@@ -10,22 +11,18 @@
 	flex-direction: column;
 	align-items: center;
 }
-.branch-title {
 
-	h2 {
-
-	}
-}
 .branch-content {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-evenly;
+	width: 100%;
 	margin-top: 50px;
 		&__item {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
-			margin-bottom: 30px;
+			margin-left: 100px;
 			img {
 				margin-right: 20px;
 			}
@@ -38,6 +35,9 @@
 				line-height: 120%;
 				color: $text;
 			}
+		}
+		&__item:nth-child(2){
+			margin-left: 0;
 		}
 
 }

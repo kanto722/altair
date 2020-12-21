@@ -1,0 +1,107 @@
+@import './variable';
+@import './common/media';
+
+
+.promo {
+}
+
+.promo-container {
+}
+.promo-title {
+    h2 {
+
+    }
+    p {
+		
+    }
+}
+.monitor-title {
+}
+.promo-block {
+
+		&__content {
+            img {
+
+            }
+
+			&_text {
+                p {
+
+                }
+			}
+		}
+}
+.promo-need {
+}
+.need-block {
+
+		&__title {
+            h2 {
+
+            }
+		}
+
+		&__key {
+		}
+}
+.need {
+
+		&__key-title {
+		}
+
+		&__key-content {
+
+			&_left {
+			}
+
+			&_right {
+			}
+		}
+}
+.need-left {
+
+		&_text {
+            img {
+
+            }
+            p{
+
+            }
+		}
+}
+.need-right {
+
+		&_text {
+            img {
+
+            }
+            p{
+                
+            }
+		}
+}
+.promo-bottom {
+
+		&__title {
+            h2 {
+
+            }
+		}
+
+		&__block {
+		}
+}
+.bottom {
+
+		&__block {
+
+			&_item {
+                img {
+
+                }
+                p{
+                    
+                }
+			}
+		}
+}
