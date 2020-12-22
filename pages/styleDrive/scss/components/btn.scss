@@ -1,0 +1,37 @@
+@import '../variable';
+@import '../common/media.scss';
+//стиль для кнопок
+.btn {
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: normal;
+    color: $white;
+    padding: 20px 20px;
+    font-size: 18px;
+    line-height: 18px;
+    background: linear-gradient(90.18deg, #97345E 8.75%, #D74145 98.03%);
+    border-radius: 10px;
+}
+.btn:hover {
+    box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px rgba(166, 171, 189, 0.5);
+}
+.btn:active {
+    background: #97345E;
+}
+.monitor-btn {
+    padding: 20px 30px;
+    background: #0066B3;
+    border-radius: 10px;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: $white;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
