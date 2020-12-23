@@ -1,3 +1,111 @@
-@import '../variable';
-@import '../common/media.scss';
+@import './variable';
+@import './common/media.scss';
 
+
+.promo {
+    padding-top: 132px;
+}
+.promo-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.promo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    h2 {
+        font-weight: 550;
+        margin-bottom: 13px;
+    }
+    p {
+        width: 651px;
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: $text;
+    }
+}
+.promo-cart {
+
+		&__block {
+            background: #F3F3F5;
+            padding: 67px 108px;
+            p {
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 120%;
+                text-align: center;
+                color: $text;
+            }
+            p:nth-child(1){
+                margin-bottom: 20px;
+            }
+		}
+}
+.promo-content {
+    padding-top: 101px;
+		&__title {
+            margin-bottom: 74px;
+		}
+
+		&__block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+			&_left {
+			}
+
+			&_left-item {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 30px;
+                img {
+                    margin-right: 24px;
+                }
+                p {
+                    font-family: HelveticaNeueCyr;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: $text;
+                }
+            }
+            &_left-item:nth-child(3){
+                p {
+                    width: 487px;
+                }
+            }
+            &_left-item:nth-child(4){
+                p {
+                    width: 480px;
+                }
+            }
+            &_left-item:nth-child(6){
+                p {
+                    width: 442px;
+                }
+            }
+            &_left-item:nth-child(7){
+                margin-bottom: 0;
+                p {
+                    width: 440px;
+                }
+            }
+
+			&_right {
+                iframe {
+                    width: 606px;
+                    height: 340px;
+                }
+			}
+		}
+}
