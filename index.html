@@ -53,7 +53,7 @@
                 </div>
                 <div class="header-contact">
                     <a class="header_number" href="#">8-800-201-3888</a>
-                    <a class="btn" href="#">Заказать звонок</a>
+                    <a onclick="openCallBack();" class="btn">Заказать звонок</a>
                 </div>
             </div>
         </div>
@@ -669,6 +669,41 @@
             </div>
         </div>
     </section>
+    <section class="modals">
+        <div class="modals-CallBack">
+            <div class="callback-container">
+                <div class="callback-block">
+                    <div class="callback-block_wrap">
+                        <div class="callback-block__close">
+                            <img onclick="closeCallBack();" src="/css/img/svg/close.svg" alt="alt">
+                        </div>
+                        <div class="callback-block__title">
+                            <h2>Обратный звонок</h2>
+                            <p>Оставьие свои контактные данные и наши специалисты с Вами свяжутся в ближайшее время</p>
+                        </div>
+                        <form action="#">
+                            <input class="callback-name" name="name2" type="text" required placeholder="Имя">
+                            <input class="callback-number number-mask" name="phone" type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <div class="form-bottom">
+                                <input name="send" type="submit" value="Отправить"class="btn-callback">
+                                <p>Оставляя данные в этой форме Вы даете согласие на <a href="#">обработку персональных данных</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modals-thanks">
+            <div class="thanks__close">
+                <img onclick="closeThanks();" src="/css/img/svg/close.svg" alt="alt">
+            </div>
+            <div class="thanks__content">
+                <img src="/css/img/svg/modal-mail.svg" alt="alt">
+                <h2>Отправлено</h2>
+                <p>Ваши данные приняты в работу</p>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="wrap">
             <div class="footer-row">
@@ -712,6 +747,8 @@
             </div>
         </div>
     </footer>
+    <script src="/js/libs/jquery-3.5.1.min.js"></script>
+    <script src="/js/libs/jquery.maskedinput.min.js"></script>
     <!-- slider-swiper-script -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

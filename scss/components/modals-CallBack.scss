@@ -1,0 +1,210 @@
+@import './variable';
+@import './common/media';
+
+.modals {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    position: absolute;
+    display: none;
+}
+
+.modals_active {
+display: flex;
+
+}
+.modals-CallBack {
+    position: fixed;
+    top: 0;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    transition: 0.3s;
+
+}
+.modals-CallBack_active {
+    display: block;
+}
+.callback-block {
+    width: 600px;
+    height: 600px;
+    background-image: url(/css/img/callback.jpg);
+    background-repeat: no-repeat;
+		&_wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 28px 29px 76px 29px;
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    font-family: HelveticaNeueCyr;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 18px;
+                    padding: 20px 30px;
+                }
+
+
+                input::placeholder {
+                    font-family: HelveticaNeueCyr;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: $gray;
+                }
+            }
+        }
+        &__close {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-bottom: 32px;
+            img {
+                cursor: pointer;
+            }
+        }
+
+		&__title {
+            margin-bottom: 39px;
+
+            h2 {
+                text-align: center;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 120%;
+                color: #ffffff;
+                margin-bottom: 30px;
+            }
+            p {
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 150%;
+                color: #FAFBFF;
+            }
+		}
+}
+.callback-name {
+    padding: 25px 0px 17px 26px;
+}
+.callback-number {
+    margin-top: 20px;
+    padding: 25px 0px 17px 26px;
+}
+.form-bottom {
+    margin-top: 76px;
+    display: flex;
+    flex-direction: row;
+    p {
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        color: #D1D3D4;
+        a {
+            outline: none;
+            text-decoration: none;
+            color: #D1D3D4;
+
+        }
+    }
+}
+
+.btn-callback {
+    background: linear-gradient(90.18deg, #97345E 8.75%, #D74145 98.03%);
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: none;
+    margin-right: 24px;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+
+//thanks modal
+
+.modals-thanks {
+    position: fixed;
+    top: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    transition: 0.3s;
+    background-image: url(/css/img/thanks-fon.jpg);
+    background-repeat: no-repeat;
+    pointer-events: none;
+    opacity: 0;
+}
+.modals-thanks_active{
+    pointer-events: all;
+    opacity: 1;
+}
+.thanks {
+
+		&__close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            z-index: 500;
+            cursor: pointer;
+            img {
+                cursor: pointer;
+
+            }
+		}
+
+		&__content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 66px 116px;
+            img {
+                margin-bottom: 40px;
+            }
+            h2 {
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 120%;
+                text-align: center;
+                text-transform: uppercase;
+                color: #ffffff;
+                margin-bottom: 11px;
+            }
+            p{
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+                color: #ffffff;                
+            }
+		}
+}
+
+
+//thanks modal
