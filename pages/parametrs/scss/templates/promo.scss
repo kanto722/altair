@@ -51,3 +51,56 @@
 			}
 		}
 }
+
+
+
+//1200px
+@include media-laptop {
+
+}
+//992px
+@include media-tablet-horizontal {
+    .promo-title{
+        margin-bottom: 50px;
+    }
+    .promo-block {
+        &__content {
+            padding: 42px 30px 30px 30px;
+            img {
+                margin-right: 40px;
+            }
+        }
+    }
+}
+//767px
+@include media-tablet {
+    .promo-block{
+        &__content {
+            padding: 42px 30px 42px 30px;
+            flex-direction: column;
+            img {
+                margin-right: 0;
+            }
+            &_text {
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+//480px
+@include media-mobile {
+.promo-block{
+    &__content {
+        &_text {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+}
+//320px
+@include media-mobile-small {
+   
+}
