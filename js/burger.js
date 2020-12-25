@@ -37,8 +37,6 @@ function closeThanks(){
 // email
 
 
-
-
 // SEND MAIL
 function sendFormOne(sendButton, inputName_Name, inputName_Phone) {
     $('[name = ' + sendButton + ']').on('click', function () {
