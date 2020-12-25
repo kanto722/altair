@@ -30,6 +30,24 @@ let mySwiper1 = new Swiper(slider1, {
       loop: true,
     lazy: {
       loadPrevNext: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      670: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
     }
   })
 

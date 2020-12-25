@@ -428,5 +428,331 @@
 		margin-top: 20px;
 	}
 }
-.monitor-btn {
+//
+.swiper-wrapper {
+	display: flex;
+	align-items: center;
+}
+//
+@include media-custom (1460px){
+	.car-question__content {
+		max-width: 100%;
+		width: 500px;
+	}
+	.reports__content_slider{
+		transform: translate(75px, 7px);
+
+	}
+}
+
+@include media-custom (1300px){
+	.car-item{
+		padding: 0px 0px 72px 40px;
+		&__left {
+			&_text {
+				p {
+					width: 450px;
+				}
+			}
+		}
+
+	}
+	.car-item:nth-child(2) {
+		padding: 0px 0px 7px 40px;
+
+	}
+
+	//
+	.container-car{
+		padding: 0px 0px 0px 40px;
+
+	}
+	.car-question__content{
+		width: 460px;
+	}
+	
+}
+
+//1200px
+@include media-laptop {
+	.car-content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.car-item {
+		flex-direction: column;
+		align-items: center;
+		max-width: 100%;
+		padding: 0px 40px 0px 40px;
+		&__left {
+			transform: translateY(-49px);
+			&_text {
+				text-align: center;
+			}
+		}
+		&__right {
+			img {
+				position: inherit;
+				width: 100%;
+				transform: translateY(27px);
+			}
+		}
+	}
+	.car-item:nth-child(2){
+		padding: 0px 40px 0px 40px;
+	}
+	
+
+	//
+	.car-questions{
+		max-width: 100%;
+		width: 762px;
+		flex-direction: column;
+	}
+	.reports__content_slider{
+		transform: translate(0px, -90px);
+	}
+	.container-car{
+		padding: 0px 0px 0px 0px;
+	}
+	.car-title-block{
+		p {
+			width: 100%;
+		}
+	}
+	//b
+	.car-bottom {
+		padding: 80px 46px 80px 46px;
+	}
+}
+//992px
+@include media-tablet-horizontal {
+	.car-title {
+		margin-bottom: 90px;
+	}
+    .car-item{
+		margin-bottom: 100px;
+		&__left {
+			transform: translateY(0px);
+		}
+	}
+	//
+	.car-questions{
+		width: 100%;
+	}
+	.car-title-block{
+		p {
+			text-align: center;
+		}
+	}
+	.car-questions__hidden-content {
+		padding-top: 15px;
+	}
+	//b
+	.car-bottom-content {
+		margin-top: 50px;
+	}
+	.car-bottom-content__left{
+		a {
+			font-size: 20px;
+		}
+		p {
+			font-size: 20px;
+			a {
+				font-size: 20px;
+			}
+		}
+	}
+	.car-bottom-content__right {
+		p {
+			font-size: 20px;
+			a {
+				font-size: 20px;
+			}
+		}
+	}
+}
+//767px
+@include media-tablet {
+	.car-item{
+		&__left {
+			&_title {
+				width: 82px;
+				height: 82px;
+			}
+
+		}
+		&__right {
+			img {
+				transform: translateY(19px);
+			}
+		}
+	}
+	.car-block-title{
+		width: 82px;
+		height: 82px;
+	}
+
+	//
+	.car-question__content{
+		width: 100%;
+		transform: translateY(0px);
+	}
+	.reports__content_slider{
+		transform: translate(0px, -14px);
+
+	}
+	.swiper-container1 {
+		width: 420px;
+	}
+	.swiper-slide {
+		img {
+			width: 100%;
+		}
+	}
+	.car-questions{
+		padding: 0px 40px 0px 40px;
+		&__title {
+			span {
+				width: 100%;
+
+			}
+		}
+	}
+	
+	.car-questions__hidden-content{
+		max-width: 100%;
+	}
+	.car-questions .car-questions__item.open .car-questions__hidden-content{
+		min-height: 100%;
+	}
+	.car-questions__content {
+		transform: translateY(-28px);
+	}
+	.swiper-button-prev {
+		display: none;
+	} 
+	.swiper-button-prev {
+		transform: translateX(0px);
+		
+	}
+	
+	.swiper-button-next {
+		transform: translateX(0px);
+	}
+	.car-block-title {
+		margin-bottom: 25px;
+	}
+	//b 
+	.car-bottom-content {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.car-bottom-content__left {
+		a {
+			margin-bottom: 25px;
+		}
+		p {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	.car-bottom {
+		padding: 40px 20px 50px 20px;
+
+	}
+}
+//480px
+@include media-mobile {
+	.car-item{
+		padding: 0px 20px 0px 20px;
+		&__left {
+			&_title {
+				width: 65px;
+    			height: 65px;
+				h2 {
+					font-size: 40px;
+				}
+			}
+			&_text {
+				p {
+					font-size: 18px;
+					width: 100%;
+				}
+				p:nth-child(2){
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	//
+	.car-block-title {
+		width: 65px;
+		height: 65px;
+		h2 {
+			font-size: 40px;
+		}
+	}
+	.swiper-container1 {
+		width: 280px;
+	}
+	.car-title-block{
+		p {
+			font-size: 18px;
+			margin-bottom: 55px;
+		}
+	}
+	.car-questions__hidden-content {
+		p {
+			font-size: 14px;
+		}
+	}
+	
+	.car-questions__toggle {
+		font-size: 18px;
+		width: 20px;
+		height: 20px;
+	}
+}
+@include media-custom (375px){
+	.car-title {
+		margin-bottom: 50px;
+	}
+	.car-item{
+		padding: 0px 5px 0px 5px;
+		&__left {
+			&_title {
+				margin-bottom: 20px;
+			}
+		}
+		&__right {
+			img {
+				transform: translateY(14px);
+				width: 280px;
+			}
+		}
+	}
+	.car-item:nth-child(2){
+		padding: 0px 5px 0px 5px;
+	}
+	//
+	.car-questions {
+		padding: 0px 5px 0px 5px;
+	}
+	.car-questions__toggle {
+		font-size: 16px;
+		width: 22px;
+		height: 21px;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		min-width: 43px;
+		min-height: 43px;
+	}
+}
+//320px
+@include media-mobile-small {
+   
 }
