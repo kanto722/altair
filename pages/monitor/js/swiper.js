@@ -24,7 +24,7 @@ let mySwiper1 = new Swiper(slider1, {
       delay: 1000,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
+        nextEl: '.swiper-button-next-none',
         prevEl: '.swiper-button-prev',
       },
       loop: true,
@@ -34,20 +34,24 @@ let mySwiper1 = new Swiper(slider1, {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 0
+        spaceBetween: 20
       },
       670: {
         slidesPerView: 1,
-        spaceBetween: 0
+        spaceBetween: 20
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 20,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 20,
       },
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      }
     }
   })
 

@@ -50,23 +50,68 @@
 
 
 
+@include media-custom (1300px) {
+    .swiper-container2 {
+        width: 900px;
+    }
+    .swiper-slide {
+        &_content {
+            padding: 22px 96px;
+        }   
+    }
+}
+
 //1200px
 @include media-laptop {
     
 }
 //992px
 @include media-tablet-horizontal {
-
-
+    .swiper-container2 {
+        width: 700px;
+    }
+    .swiper-slide {
+        &_content {
+            padding: 22px 211px;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 //767px
 @include media-tablet {
-
+    .reviews{
+        padding-top: 50px;
+    }
+    .swiper-container2 {
+        width: 400px;
+        .swiper-button-prev,
+        .swiper-button-next{
+            display: none;
+        }   
+        .swiper-button-prev {
+            background: none; 
+            display: none;
+        }
+        
+        .swiper-button-next {
+            display: none;
+            background: none;    
+        }
+    }
+    .swiper-slide {
+        &_content {
+            padding: 22px 21px;
+        }
+    }
     
 }
 //480px
 @include media-mobile {
-    
+    .swiper-container2{
+        width: 280px;
+    }
 }
 //320px
 @include media-mobile-small {
