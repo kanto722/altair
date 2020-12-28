@@ -366,7 +366,6 @@ padding-bottom: 120px;
     transition: 0.2s;
     max-width: 1224px;
     width: 100%;
-	margin: 0 auto;
 	margin-bottom: 130px;
 
       &__content {
@@ -500,7 +499,7 @@ padding-bottom: 120px;
 
 .reports__content_slider {
 	position: relative;
-    transform: translate(45px, 5px);
+    transform: translate(0px, 5px);
 	filter: drop-shadow(-5px -5px 10px #FAFBFF), drop-shadow(5px 5px 10px rgba(166, 171, 189, 0.5));
 	border-radius: 10px;
 }
@@ -711,4 +710,375 @@ padding-bottom: 120px;
 }
 
 
+@include media-custom (1300px) {
+	.car-item1 {
+		&__left {
+			padding: 0px 80px 131px 80px;
+		}
+		&__right {
+			padding: 0px 80px 131px 80px;
 
+		}
+	}
+	.reports__content_slider{
+		transform: translate(-69px, 5px);
+	}
+	.car-item4{
+		&__left {
+			padding: 83px 80px 131px 80px;
+
+		}
+		&__right {
+			padding: 83px 80px 119px 80px;
+		}
+	}
+}
+//1200px
+@include media-laptop {
+	.car-item1 {
+		&__left {
+			padding: 0px 30px 90px 30px;
+		}
+		&__right {
+			padding: 0px 30px 90px 30px;
+
+		}
+	}
+	.car-item2{
+		padding-bottom: 130px;
+		&__left {
+			padding: 0px 30px 72px 30px;
+		}
+	}
+	.car-questions{
+		max-width: 100%;
+		&__content {
+			width: 450px;
+
+		}
+	}
+	.container-car{
+		padding: 0px 68px 0px 29px;
+
+	}
+	.car-block-title{
+		margin-bottom: 0;
+		transform: translateY(-98px);
+	}
+	.swiper-container1{
+		width: 350px;
+	}
+	.swiper-slide {
+		img {
+			width: 100%;
+		}
+	}
+	.reports__content_slider{
+		transform: translate(-30px, 5px);
+	}
+
+	.car-item4{
+		&__left {
+			padding: 83px 30px 131px 30px;
+
+		}
+		&__right {
+			padding: 83px 30px 119px 30px;
+		}
+	}
+}
+//992px
+@include media-tablet-horizontal {
+    .car-item1{
+		padding-bottom: 90px;
+		flex-direction: column;
+		align-items: center;
+		&__left {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 80px;
+			padding: 0px 40px 70px 40px;
+			&_text {
+				width: 100%;
+			}
+		}
+		&__right {
+			width: 100%;
+			padding: 0px 40px 70px 40px;
+			&_text {
+				width: 100%;
+			}
+
+		}
+	}
+	.car-item2{
+		padding-bottom: 100px;
+		&__left {
+			padding: 0px 40px 72px 40px;
+			&_text {
+				h2 {
+					text-align: center;
+				}
+				&-block {
+					flex-direction: column;
+				}
+			}
+		}
+	}
+	.car-item-block__left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	.car-item-block__left li {
+		width: 350px;
+		line-height: 150%;
+	}
+	
+	.car-item-block__right li {
+		width: 350px;
+		line-height: 150%;
+	}
+	.car-item-block__right{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.car-questions {
+		flex-direction: column;
+		margin-bottom: 100px;
+		&__item {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			width: 100%;
+			justify-content: center;
+		}
+	}
+	.car-title-block {
+		width: 100%;
+		text-align: center;
+		p {
+			width: 100%;
+		}
+	}
+	.car-block-title{
+		transform: translateY(-52px);
+	}
+	.container-car {
+		width: 100%;
+		padding: 0px 40px 0px 40px;
+	}
+	.reports__content_slider{
+		transform: translate(0px, 5px);
+	}
+	.swiper-container1 {
+		width: 500px;
+	}
+	.car-questions .car-questions__item.open .car-questions__hidden-content {
+		max-height: 100%;
+	}
+	.car-item4{
+		padding-bottom: 100px;
+		flex-direction: column;
+		width: 100%;
+		&__left {
+			padding: 40px 40px 100px 40px;
+			margin-right: 0;
+			margin-bottom: 80px;
+			h2 {
+				width: 100%;
+			}
+			li {
+				width: 100%;
+			}
+		}
+		&__right {
+			padding: 40px 40px 100px 40px;
+			h2 {
+				width: 100%;
+			}
+			li {
+				width: 100%;
+			}
+		}
+	}
+}
+//767px
+@include media-tablet {
+    .car-item1{
+		&__left {
+			padding: 0px 40px 70px 40px;
+
+		}
+		&__right {
+			padding: 0px 40px 70px 40px;
+
+		}
+	}
+	.swiper-container1 {
+		width: 400px;
+		.swiper-button-prev {
+			transform: translateX(0px);
+			display: none;
+		}
+		
+		.swiper-button-next {
+			transform: translateX(0px);
+			display: none;
+		}
+		.swiper-button-prev,
+		.swiper-button-next {
+			display: none;
+		}
+	}
+	.reports__content_slider {
+		transform: translate(0px, -30px);
+	}
+
+}
+//480px
+@include media-mobile {
+	.car-item1 {
+		padding-bottom: 60px;
+		&__left {
+			margin-bottom: 60px;
+			padding: 0px 20px 70px 20px;
+			&_text {
+				h2 {
+					font-size: 20px;
+					margin-bottom: 20px;
+				}
+			}
+			&_title {
+				transform: translateY(-28px);
+				width: 60px;
+				height: 60px;
+				h2 {
+					font-size: 30px;
+				}
+			}
+		}
+		&__right {
+			padding: 0px 20px 70px 20px;
+			&_text {
+				h2 {
+					font-size: 20px;
+					margin-bottom: 20px;
+				}
+			}
+			&_title {
+				transform: translateY(-28px);
+				width: 60px;
+				height: 60px;
+				h2 {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+	.car-item2{
+		padding-bottom: 60px;
+		&__left {
+			padding: 0px 20px 72px 20px;
+			&_text {
+				h2 {
+					margin-bottom: 20px;
+					padding-left: 0;
+					font-size: 20px;
+				}
+			}
+			&_title {
+				transform: translateY(-28px);
+				width: 60px;
+				height: 60px;
+				h2 {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+	.car-item-block__left li {
+		width: 100%;
+	}
+	.car-item-block__right li {
+		width: 100%;
+	}
+	.container-car{
+		padding: 0px 20px 0px 20px;
+	}
+	.car-block-title {
+		width: 60px;
+		height: 60px;
+		transform: translateY(-28px);
+		h2 {
+			font-size: 30px;
+		}
+	}
+	.car-title-block{
+		p {
+			font-size: 20px;
+		}
+	}
+	.swiper-container1 {
+		width: 300px;
+	}
+	.car-questions__hidden-content {
+		p {
+			font-size: 14px;
+		}
+	}
+	.car-questions{
+		&__content {
+			width: 100%;
+		}
+	}
+	
+	.car-questions__toggle {
+		font-size: 18px;
+		width: 20px;
+		height: 20px;
+	}
+	.car-questions{
+		margin-bottom: 60px;
+		&__title {
+			span {
+				font-size: 12px;
+			}
+		}
+	}
+
+	.car-item4 {
+		padding-bottom: 60px;
+		&__left {
+			margin-bottom: 60px;
+			padding: 40px 20px 100px 20px;
+			h2 {
+				font-size: 20px;
+			}
+		}
+		&__right {
+			padding: 40px 20px 100px 20px;
+			h2 {
+				font-size: 20px;
+			}
+		}
+	}
+}
+@include media-custom (375px) {
+	.car-questions{
+		&__title {
+			span {
+				font-size: 10px;
+			}
+		}
+	}
+	.swiper-container1 {
+		width: 260px;
+	}
+}
+//320px
+@include media-mobile-small {
+   
+}
