@@ -732,6 +732,16 @@ padding-bottom: 120px;
 			padding: 83px 80px 119px 80px;
 		}
 	}
+	.car-item {
+		max-width: 100%;
+		&__right {
+			img {
+				position: inherit;
+				transform: translateY(193px);
+				width: 500px;
+			}
+		}
+	}
 }
 //1200px
 @include media-laptop {
@@ -784,6 +794,16 @@ padding-bottom: 120px;
 		}
 		&__right {
 			padding: 83px 30px 119px 30px;
+		}
+	}
+	.car-item {
+		padding: 0px 0px 72px 30px;
+		margin-bottom: 100px;
+		&__right {
+			img {
+				transform: translateY(224px);
+				width: 450px;
+			}
 		}
 	}
 }
@@ -904,6 +924,52 @@ padding-bottom: 120px;
 			}
 		}
 	}
+	.car-item {
+		padding: 0px 40px 0px 40px;
+		flex-direction: column;
+		&__left {
+			&_text4 {
+				h2 {
+					width: 100%;
+				}
+				p {
+					width: 100%;
+				}
+			}
+		}
+		&__right {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			img {
+				transform: translateY(0px);
+				width: 600px;
+			}
+		}
+	}
+	.car-bottom-content {
+		flex-direction: column;
+		align-content: center;
+		margin-top: 40px;
+		&__left {
+			align-items: center;
+			text-align: center;
+
+		}
+		&__right {
+			align-items: center;
+			text-align: center;
+		}
+		&__btn {
+			transform: translateY(45px);
+		}
+	}
+	.car-bottom{
+		padding: 40px 20px 40px 20px;
+
+	}
+
 }
 //767px
 @include media-tablet {
@@ -937,6 +1003,13 @@ padding-bottom: 120px;
 		transform: translate(0px, -30px);
 	}
 
+	.car-item {
+		&__right {
+			img {
+				width: 100%;
+			}
+		}
+	}
 }
 //480px
 @include media-mobile {
@@ -1065,8 +1138,51 @@ padding-bottom: 120px;
 			}
 		}
 	}
+	.car-item {
+		padding: 0px 20px 0px 20px;
+		margin-bottom: 60px;
+		&__left {
+			transform: translateY(-28px);
+			&_text4 {
+				h2 {
+					font-size: 20px;
+				}
+			}
+			&_title {
+				width: 60px;
+				height: 60px;
+				h2 {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	.car-bottom-content{
+		&__left {
+			p {
+				width: 100%;
+			}
+		}
+	}
 }
 @include media-custom (375px) {
+	.car-item1{
+		&__left {
+			&_text {
+				h2 {
+					text-align: center;
+				}
+			}
+		}
+		&__right {
+			&_text {
+				h2 {
+					text-align: center;
+				}
+			}
+		}
+	}
 	.car-questions{
 		&__title {
 			span {
@@ -1076,6 +1192,39 @@ padding-bottom: 120px;
 	}
 	.swiper-container1 {
 		width: 260px;
+	}
+	.car-item4 {
+		&__left {
+			h2 {
+				text-align: center;
+			}
+		}
+		&__right {
+			h2 {
+				text-align: center;
+			}
+		}
+	}
+	.car-item {
+		&__left {
+			&_text4 {
+				h2 {
+					text-align: center;
+				}
+			}
+		}
+	}
+	.car-bottom-content{
+		&__btn {
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: center;
+			justify-content: center;
+			a {
+				margin-right: 0;
+				margin-top: 20px;
+			}
+		}
 	}
 }
 //320px

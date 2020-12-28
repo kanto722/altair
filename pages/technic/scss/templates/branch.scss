@@ -50,3 +50,36 @@
 .branch-column:nth-child(3) {
 	margin-right: 0;
 }
+
+
+//1200px
+@include media-laptop {
+	.branch-content{
+		flex-direction: column;
+	}
+}
+//992px
+@include media-tablet-horizontal {
+    
+}
+//767px
+@include media-tablet {
+
+}
+//480px
+@include media-mobile {
+	.branch-content{
+		&__item {
+			flex-direction: column;
+			text-align: center;
+			img {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+//320px
+@include media-mobile-small {
+   
+}
