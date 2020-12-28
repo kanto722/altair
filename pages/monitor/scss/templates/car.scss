@@ -663,6 +663,22 @@
 		padding: 40px 20px 50px 20px;
 
 	}
+	.car-item:nth-child(4){
+		padding: 0px 40px 0px 40px;
+
+	}
+	.car-item{
+		&__left {
+			&_text4 {
+				h2 {
+					width: 100%;
+				}
+				p{
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 //480px
 @include media-mobile {
@@ -670,10 +686,11 @@
 		padding: 0px 20px 0px 20px;
 		&__left {
 			&_title {
-				width: 65px;
-    			height: 65px;
+				transform: translateY(-28px);
+				width: 60px;
+    			height: 60px;
 				h2 {
-					font-size: 40px;
+					font-size: 30px;
 				}
 			}
 			&_text {
@@ -689,14 +706,28 @@
 	}
 	//
 	.car-block-title {
-		width: 65px;
-		height: 65px;
+		width: 60px;
+		height: 60px;
+		transform: translateY(-28px);
 		h2 {
-			font-size: 40px;
+			font-size: 30px;
 		}
 	}
 	.swiper-container1 {
 		width: 280px;
+		.swiper-button-prev,
+		.swiper-button-next {
+			display: none;
+		}
+		.swiper-button-prev {
+			transform: translateX(0px);
+			display: none;
+		}
+
+		.swiper-button-next {
+			transform: translateX(0px);
+			display: none;
+		}
 	}
 	.car-title-block{
 		p {
@@ -709,11 +740,33 @@
 			font-size: 14px;
 		}
 	}
-	
+	.car-questions__content{
+		padding: 10px 10px;
+
+	}
+	.car-questions{
+		&__title {
+			span {
+				font-size: 14px;
+			}
+		}
+	}
 	.car-questions__toggle {
 		font-size: 18px;
 		width: 20px;
 		height: 20px;
+	}
+	.car-item{
+		&__left {
+			&_text4 {
+				h2 {
+					text-align: center;
+				}
+				p{
+					text-align: center;
+				}
+			}
+		}
 	}
 }
 @include media-custom (375px){
