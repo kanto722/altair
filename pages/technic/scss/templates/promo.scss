@@ -143,7 +143,8 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            width: 394px;
+            width: 382px;
+            margin-bottom: 30px;
             img {
                 margin-right: 30px;
             }
@@ -156,12 +157,12 @@
                 color: $text;
             }
         }
-        &_item:nth-child(4){
-            margin-top: 30px;
-        }
-        &_item:nth-child(5){
-            margin-top: 30px;
-        }
+        // &_item:nth-child(4){
+        //     margin-top: 30px;
+        // }
+        // &_item:nth-child(5){
+        //     margin-top: 30px;
+        // }
     }
 }
 
@@ -215,4 +216,182 @@
     border: 1px dashed #0066B3;
     transform: translate(0px, -110px);
     z-index: 1;
+}
+
+
+//1200px
+@include media-laptop {
+    .need{
+        &__content {
+            &_left {
+                &-item {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+    .promo-type{
+        &__content {
+            justify-content: center;
+        }
+    }
+    .bottom{
+        &__block {
+            &_item {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+//992px
+@include media-tablet-horizontal {
+    .promo{
+        padding-top: 50px;
+    }
+    .promo-block{
+        &__content {
+            padding: 42px 10px 36px 10px;
+            img {
+                margin-right: 30px;
+            }
+        }
+    }
+    .need-block{
+        &__content {
+            flex-direction: column-reverse;
+        }
+    }
+    .need{
+        &__content {
+            &_left {
+                &-item {
+                    margin-right: 0;
+                }
+            }
+            &_right {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .promo-bottom{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &__block {
+            flex-direction: column;
+
+        }
+    }
+    .promo-bottom::after{
+        display: none;
+    }
+    .bottom{
+        &__block {
+            &_item {
+                margin-bottom: 20px;
+                img {
+                    margin-bottom: 20px;
+                }
+                p {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+}
+//767px
+@include media-tablet {
+    .promo-block{
+        &__content {
+            flex-direction: column;
+            img {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+            &_text {
+                text-align: center;
+
+            }
+        }
+    }
+    .promo-need{
+        padding-top: 60px;
+    }
+    .need{
+        &__content {
+            &_right {
+                width: 100%;
+                &-item {
+                    width: 100%;
+                    iframe {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .promo-type{
+        &__title {
+            margin: 30px;
+            h2 {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+//480px
+@include media-mobile {
+    .promo-title{
+        p {
+            font-size: 18px;
+        }
+    }
+    .need{
+        &__content {
+            &_left {
+                &-item {
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+                &-item:nth-child(1){
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+            &_right {
+                &-item {
+                    iframe {
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+    .need-block{
+        &__content {
+            padding: 0px 10px;
+        }
+    }
+    .promo-type{
+        &__content {
+            &_item {
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                img {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+//320px
+@include media-mobile-small {
+   
 }
