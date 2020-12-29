@@ -184,49 +184,8 @@
         border-bottom: none;
     }
 }
-.header-nav__block li:nth-child(5):hover .drop-nav2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 1;
-    pointer-events: all;
-    a::after {
-        content: "";
-        border-bottom: none;
-    }
-}
 
 .drop-nav {
-    position: absolute;
-    top: 45px;
-    z-index: 10;
-    opacity: 0;
-    pointer-events: none;
-    background: #DFE3F2;
-    width: 250px;
-    transition: 0.3s;
-    a {
-        outline: none;
-        text-decoration: none;
-        font-family: HelveticaNeueCyr;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 120%;
-        color: $text;
-        border-bottom: 1px solid #828282;
-        padding: 12px 10px 9px 19px;
-    }
-    a:last-child {
-        border-bottom: none;
-        padding-bottom: 19px;
-    }
-    a:hover {
-        background: #0066B3;
-        color: #fff;
-    }
-
-}.drop-nav2 {
     position: absolute;
     top: 45px;
     z-index: 10;
@@ -320,17 +279,6 @@
 
 @include media-custom (1540px) {
 
-
-    // .header-contact {
-    //     flex-direction: column;
-    // }
-    // .header_number {
-    //     padding-right: 0;
-    //     padding-bottom: 10px;
-    // }
-    // .header-nav {
-    //     padding-top: 20px;
-    // }
     .header-row {
         margin-right: 25px;
     }
@@ -341,19 +289,6 @@
     }
 }
 
-// @include media-custom (1382px) {
-//     .header-nav{
-//         &__link {
-//             font-size: 16px;
-//         }
-//     }
-//     .header-logo{
-//         padding-right: 10px;
-//     }
-//     .btn {
-//         font-size: 16px;
-//     }
-// }
 //1278px
 @include media-custom (1430px){
     .header-contact{
@@ -461,10 +396,6 @@
         top: 182px;
         right: 185px;
     }
-    .drop-nav2{
-        top: 260px;
-        right: 165px;
-    }
 }
 //992px
 @include media-tablet-horizontal {
@@ -501,9 +432,6 @@
     .drop-nav {
         right: 157px;
     }
-    .drop-nav2 {
-        right: 152px;
-    }
 }
 //480px
 @include media-mobile {
@@ -530,14 +458,6 @@
     .drop-nav {
         right: 0px;
         width: 200px;
-        a {
-            font-size: 12px;
-        }
-    }
-    .drop-nav2 {
-        right: 0px;
-        width: 200px;
-        top: 249px;
         a {
             font-size: 12px;
         }

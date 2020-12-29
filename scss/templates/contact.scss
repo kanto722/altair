@@ -221,18 +221,6 @@
     .contact-container-content{
         padding-left: 0;
     }
-}
-//992px
-@include media-tablet-horizontal {
-    .contact{
-        padding-top: 40px;
-    }
-    .contact-container-title{
-        padding-bottom: 30px;
-        h3 {
-            font-size: 30px;
-        }
-    }
     .contact-container-content{
         flex-direction: column;
         align-items: center;
@@ -285,9 +273,23 @@
                 }
             }
         }
+    }
+}
+//992px
+@include media-tablet-horizontal {
+    .contact{
+        padding-top: 40px;
+    }
+    .contact-container-title{
+        padding-bottom: 30px;
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    .content{
         &__maps {
-            max-width: 600px;
-            
+            max-width: 600px;   
         }
     }
 }
