@@ -103,6 +103,13 @@
     }
     .swiper-container3 {
         max-width: 972px;
+        .swiper-button-prev {
+            transform: translateX(0px);
+        
+        }
+        .swiper-button-next {
+            transform: translateX(0px);
+        }
     }
     
 }

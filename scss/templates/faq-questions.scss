@@ -86,13 +86,13 @@
       }
       .faq-questions__item.open {
         .faq-questions {
-          &__content {
-            padding: 0 15px 42px 44px;
-          }
-          &__title {
-            padding-top: 15px;
-            margin-bottom: 25px;
-          }
+          // &__content {
+          //   padding: 0 15px 42px 44px;
+          // }
+          // &__title {
+          //   padding-top: 15px;
+          //   margin-bottom: 25px;
+          // }
           &__toggle {
             transform: rotate(45deg);
           }

@@ -13,6 +13,9 @@ let mySwiper1 = new Swiper(slider1, {
     lazy: {
       loadPrevNext: true,
     },
+    autoplay: {
+      delay: 2000,
+    },
   })
 
   let mySwiper2 = new Swiper(slider2, {
@@ -30,6 +33,9 @@ let mySwiper1 = new Swiper(slider1, {
         el: '.swiper-pagination',
         type:'bullets',
         clickable: true,
+    },
+    autoplay: {
+      delay: 1500,
     },
   })
 
