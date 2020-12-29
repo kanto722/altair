@@ -10,3 +10,33 @@
     text-transform: uppercase;
     color: $title;
 }
+
+//1200px
+@include media-laptop {
+
+}
+//992px
+@include media-tablet-horizontal {
+    
+}
+//767px
+@include media-tablet {
+    .monitor-title {
+        font-size: 28px;
+    }
+}
+//480px
+@include media-mobile {
+    .monitor-title {
+        font-size: 24px;
+    }
+}
+@include media-custom (375px) {
+    .monitor-title {
+        font-size: 20px;
+    }
+}
+//320px
+@include media-mobile-small {
+   
+}
