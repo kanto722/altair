@@ -565,7 +565,10 @@ margin-bottom: 94px;
 	box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px rgba(166, 171, 189, 0.5);
 	padding: 80px 96px 80px 96px;
 }
-
+.swiper-wrapper {
+	display: flex;
+	align-items: center;
+}
 .car-bottom-content {
 	display: flex;
 	width: 100%;
