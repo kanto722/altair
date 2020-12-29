@@ -10,13 +10,11 @@ headerBurger.onclick = function(){
 
 
 
-
 // обратный звонок
 function openCallBack(){
     $('.modals-CallBack').addClass('modals-CallBack_active');
     $('.modals').addClass('modals_active');
     $('body').css('overflow-y', 'hidden');
-    
 }
 
 function closeCallBack(){
