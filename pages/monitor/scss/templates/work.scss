@@ -18,12 +18,9 @@
 }
 .work-container_active {
     padding-bottom: 130px;
-    transition: .7s;
-
     opacity: 1;
     pointer-events: all;
     height: 1000px;
-    overflow-y: unset;
 }
 
 .open-work-btn {
@@ -117,8 +114,9 @@
 }
 
 @include media-custom (1280px){
-    .work-container{
-        padding-bottom: 90px;
+    .work-container_active{
+        height: 100%;
+        // padding-bottom: 90px;
     }
     .work-title {
         img {
@@ -167,7 +165,7 @@
 //767px
 @include media-tablet {
     .work-container{
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
     }
     .work-block-left-item{
         padding: 22px 10px 11px 10px;
