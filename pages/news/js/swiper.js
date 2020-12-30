@@ -3,7 +3,9 @@ const slider3 = document.querySelector('.swiper-container3');
   let mySwiper3 = new Swiper(slider3, {
     slidesPerView: 2,
     spaceBetween: 20,
-    
+    autoplay: {
+      delay: 2000,
+    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
