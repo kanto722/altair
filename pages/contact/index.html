@@ -25,7 +25,7 @@
     <header class="header">
         <div class="header-wrap">
             <div class="header-logo">
-                <img src="/pages/contact/css/img/svg/header-logo.svg" alt="logo">
+                <a href="/"><img src="/css/img/svg/header-logo.svg" alt="logo"></a>
                 <div class="line"></div>
                 <div class="header-logo__text">
                     <h3>Черноземье</h3>
@@ -39,31 +39,31 @@
                 <div class="header-row">
                     <nav class="header-nav">
                         <ul class="header-nav__block">
-                            <li><a class="header-nav__link" href="#">О компании</a></li>
-                            <li><a class="header-nav__link" href="#">СКАУТ</a></li>
+                            <li><a class="header-nav__link" href="/pages/about/index.html">О компании</a></li>
+                            <li><a class="header-nav__link" href="/pages/skayt/index.html">СКАУТ</a></li>
                             <li><a class="header-nav__link drop-click">Готовые решения</a>
                                 <div class="drop-nav">
-                                    <a href="#">Базовый мониторинг</a>
-                                    <a href="#">Контроль топлива</a>
-                                    <a href="#">Контроль спецтехники</a>
-                                    <a href="#">Контроль стиля вождения</a>
-                                    <a href="#">Контроль складской техники</a>
-                                    <a href="#">Контроль других параметров</a>
+                                    <a href="/pages/monitor/index.html">Базовый мониторинг</a>
+                                    <a href="/pages/fuell/index.html">Контроль топлива</a>
+                                    <a href="/pages/technic/index.html">Контроль спецтехники</a>
+                                    <a href="/pages/styleDrive/index.html">Контроль стиля вождения</a>
+                                    <a href="/pages/control/index.html">Контроль складской техники</a>
+                                    <a href="/pages/parametrs/index.html">Контроль других параметров</a>
                                 </div>
                             </li>
-                            <li><a class="header-nav__link" href="#">Оборудование</a></li>
-                            <li><a class="header-nav__link" href="#">Новости</a></li>
-                            <li><a class="header-nav__link" href="#">Контакты</a></li>
+                            <li><a class="header-nav__link" href="/pages/modules/index.html">Оборудование</a></li>
+                            <li><a class="header-nav__link" href="/pages/news/index.html">Новости</a></li>
+                            <li><a class="header-nav__link" href="/pages/contact/index.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="header-contact">
-                    <a class="header_number" href="#">8-800-201-3888</a>
+                    <a class="header_number" href="tel:+78002013888">8-800-201-3888</a>
                     <a onclick="openCallBack();" class="btn">Заказать звонок</a>
                 </div>
             </div>
             <div class="header-contact2">
-                <a class="header_number" href="#">8-800-201-3888</a>
+                <a class="header_number" href="tel:+78002013888">8-800-201-3888</a>
                 <a onclick="openCallBack();" class="btn">Заказать звонок</a>
             </div>
         </div>
@@ -82,12 +82,12 @@
                         </div>
                         <div class="content__text_number">
                             <h3>Телефон:</h3>
-                            <a href="#">8-800-201-38-88</a>
-                            <a href="#">8 (473) 260-23-35</a>
+                            <a href="tel:+78002013888">8-800-201-38-88</a>
+                            <a href="tel:+74732602335">8 (473) 260-23-35</a>
                         </div>
                         <div class="content__text_email">
                             <h3>Email:</h3>
-                            <a href="#">mail@scoutvrn.ru</a>
+                            <a href="malito:mail@scoutvrn.ru">mail@scoutvrn.ru</a>
                         </div>
                         <div class="content__text_work">
                             <h3>график работы</h3>
@@ -96,16 +96,16 @@
                         <div class="content__text_support">
                             <h3>техническая поддержка</h3>
                             <div class="content__text_support-social">
-                                <a href="#">8 (960) 102-32-15</a>
+                                <a href="tel:+79601023215">8 (960) 102-32-15</a>
                                 <a href="#"><img src="/pages/contact/css/img/svg/phone.svg" alt="alt"></a>
                                 <a href="#"><img src="/pages/contact/css/img/svg/tg.svg" alt="alt"></a>
                                 <a href="#"><img src="/pages/contact/css/img/svg/viber.svg" alt="alt"></a>
                             </div>
                             <p>в нерабочее время время доступна по эл.адресу:</p>
-                            <a href="#">tp@scoutvrn.ru</a>
+                            <a href="malito:tp@scoutvrn.ru">tp@scoutvrn.ru</a>
                         </div>
                     </div>
-                    <div class="content__maps">
+                    <div class="content__maps" id="maps">
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A36a185c1c90b97dc6b21f77694df4fac833d8723c84c8ead2991cfe0a14f0b33&amp;width=100%25&amp;height=577&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
             <div class="footer-row">
                 <div class="footer-logo">
                     <div class="footer-logo-top">
-                        <img src="/pages/contact/css/img/svg/footer-logo.svg" alt="logo">
+                        <img src="/css/img/svg/footer-logo.svg" alt="logo">
                         <div class="line2"></div>
                         <div class="footer-logo-top__text">
                             <h3>Черноземье</h3>
@@ -132,29 +132,38 @@
                 <div class="footer-row2">
                     <div class="footer-nav">
                         <ul class="footer-nav__elem1">
-                            <li><a class="footer-nav__link" href="#">О компании</a></li>
-                            <li><a class="footer-nav__link" href="#">О системе</a></li>
-                            <li><a class="footer-nav__link" href="#">Каталог услуг</a></li>
+                            <li><a class="footer-nav__link" href="/pages/about/index.html">О компании</a></li>
+                            <li><a class="footer-nav__link" href="/pages/skayt/index.html">СКАУТ</a></li>
+                            <li><a class="footer-nav__link" href="/pages/modules/index.html">Оборудование</a></li>
+                            <li><a class="footer-nav__link" href="/pages/news/index.html">Новости</a></li>
+                            <li><a class="footer-nav__link" href="/pages/contact/index.html">Контакты</a></li>
                         </ul>
                         <ul class="footer-nav__elem2">
-                            <li><a class="footer-nav__link" href="#">Готовые решения</a></li>
-                            <li><a class="footer-nav__link" href="#">Новости</a></li>
-                            <li><a class="footer-nav__link" href="#">Контакты</a></li>
+                            <li><a class="footer-nav__link">Готовые решения</a></li>
+                            <li><a class="footer-nav__link" href="/pages/monitor/index.html">Базовый мониторинг</a></li>
+                            <li><a class="footer-nav__link" href="/pages/fuell/index.html">Контроль топлива</a></li>
+                            <li><a class="footer-nav__link" href="/pages/technic/index.html">Контроль спецтехники</a></li>
+                            <li><a class="footer-nav__link" href="/pages/styleDrive/index.html">Контроль стиля вождения</a></li>
+                            <li><a class="footer-nav__link" href="/pages/control/index.html">Контроль складской техники</a></li>
+                            <li><a class="footer-nav__link" href="/pages/parametrs/index.html">Контроль других параметров</a></li>
+
                         </ul>
                     </div>
     
                     <div class="footer-contact">
-                        <a class="footer_number" href="#">8-800-201-3888</a>
-                        <a class="btn" href="#">Заказать звонок</a>
+                        <a class="footer_number" href="tel:+78002013888">8-800-201-3888</a>
+                        <a onclick="openCallBack();" class="btn">Заказать звонок</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <a class="footer-bottom__web" href="#"><img src="/pages/contact/css/img/svg/logo-ww.svg" alt="logo"></a>
+                <a class="footer-bottom__web" target="_blank" href="https://ww.net.ru/"><img src="/css/img/svg/logo-ww.svg" alt="logo"></a>
                 <a class="footer-bottom__policy" href="#">Политика конфеденциальности</a>
             </div>
         </div>
     </footer>
+    <script src="/js/libs/jquery-3.5.1.min.js"></script>
+    <script src="/js/libs/jquery.maskedinput.min.js"></script>
     <script src="/pages/contact/js/burger.js"></script>
 </body>
 </html>

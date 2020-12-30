@@ -6,7 +6,7 @@
     background: $text;
     padding-top: 66px;
     padding-bottom: 111px;
-    height: calc(26vh + 100px);
+    height: calc(34vh + 100px);
     &_number {
         outline: none;
         text-decoration: none;
@@ -136,20 +136,13 @@
 
 //1200px
 @include media-laptop {
-    .footer-row2 {
-        .footer-nav {
-        }
-    }
-}
-@include media-custom (1040px) {
     .footer-nav{
         &__elem1 {
             margin-right: 20px;
         }
     }
 }
-//992px
-@include media-tablet-horizontal {
+@include media-custom (1100px) {
     .footer {
         padding-bottom: 22px;
         height: 100%;
@@ -169,12 +162,12 @@
         }
     }
 }
+//992px
+@include media-tablet-horizontal {
+   
+}
 //767px
 @include media-tablet {
-    
-}
-//480px
-@include media-mobile {
     .footer {
         padding-top: 20px;
     }
@@ -240,6 +233,10 @@
             margin-bottom: 50px;
         }
     }
+}
+//480px
+@include media-mobile {
+    
 }
 //320px
 @include media-mobile-small {

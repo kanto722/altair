@@ -1,0 +1,288 @@
+<?
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>General</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta name="robots" content="noindex, nofollow"/>.
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="icon" sizes="48x48" href="/css/img/favicon/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/css/img/favicon/apple-touch-icon-180x180.png" />
+    <meta name="theme-color" content="#767067" />
+    <!-- style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/libs/jquery.fancybox.min.css" />
+
+    <!-- style -->
+
+    <!-- <? echo'<link rel="canonical" href="https://general-hockey.ru'.$_SERVER['REQUEST_URI'].'">'; ?> -->
+
+</head>
+    <body>
+        <header class="header">
+            <div class="wrap">
+                <div class="header-container">
+                    <div class="header-logo">
+                        <a href="/index.html"><img src="/css/img/svg/logo.svg" alt="logo"></a>
+                        <p>Производитель хоккейных дорожек</p>
+                    </div>
+                    <div class="header-burger2">
+                        <span></span>
+                    </div>
+                    <div class="header-block2">
+                        <nav class="header-nav">
+                            <ul>
+                                <li><a class="header-nav__link" href="#safety">О тренажере</a></li>
+                                <li><a class="header-nav__link" href="#track">Преимущества</a></li>
+                                <li><a class="header-nav__link" href="#galler">Объекты</a></li>
+                                <li><a class="header-nav__link" href="#speak">Отзывы</a></li>
+                                <li><a class="header-nav__link" href="#general">О компании</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-burger">
+                            <span></span>
+                        </div>
+                        <div class="header-block1">
+                            <div class="header-connection">
+                                <a href="malito:general-hockey@mail.ru" target="_blank">general-hockey@mail.ru</a>
+                                <div class="header-connection_number">
+                                    <a href="tel:+79222677282">+7 (922) 267-72-82</a>
+                                    <a href="tel:+79224795891">+7 (922) 479-58-91</a>
+                                </div>
+                            </div>
+                            <div onclick="openCallBack();" class="header-btn btn-fon">
+                                <div class="header-btn_wrap btn-wrap">
+                                    <a class="btn-style">Обратный звонок</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="cookie">
+            <div class="wrap">
+                <div class="cookie-container">
+                    <h1>Политика использования cookie-файлов</h1>
+                    <p>На интернет-сайте <span>Домен</span> (далее Сайт) используются cookie-файлы, веб-маяки и иные схожие технологии для того, чтобы отличить пользователей друг от друга. Это позволяет обеспечивать удобный просмотр страниц сайта, а также даёт возможность улучшать его.</p>
+                    <h2>Что такое cookie-файлы?</h2>
+                    <p>Cookie-файлы представляют собой небольшие фрагменты данных, которые сохраняются в браузере компьютера, мобильного телефона или другого устройства после посещения веб-сайтов. Cookie-файлы широко применяются для поддержания работы веб-сайтов и сбора статистики.</p>
+                    <h2>Как на Сайте используются cookie-файлы?</h2>
+                    <p>Информация, которая содержится в cookie-файлах, помогает нам анализировать то, как используется веб-сайт, чтобы было возможно сделать его более удобным и функциональным.</p>
+                    <p>Персональные данные сохраняются в cookie-файлах, если пользователь согласился на их использование. Это обеспечивает защищенный вход в личный кабинет, что технически необходимо.</p>
+                    <h2>Какие типы cookie-файлов используются на Сайте?</h2>
+                    <h2>Технические cookie-файлы</h2>
+                    <p>Использование этих функциональных cookie-файлов нельзя запретить при посещении Сайта, так как они обеспечивают корректную работу веб-сайта. Сюда относятся cookie-файлы, которые собирают информацию о том, разрешено или запрещено использование других cookie-файлов.</p>
+                    <h2>Cookie-файлы сеанса посещения и cookie-файлы предпочтений</h2>
+                    <p>Данные cookie-файлы позволяют войти в защищенные разделы Сайта, добавлять товары в корзину или воспользоваться системой электронных платежей. Срок действия таких cookie-файлов истекает по окончании сеанса посещения. Также могут быть использованы cookie-файлы, которые действуют дольше и создаются для того, чтобы запомнить предпочтения пользователя и варианты выбора во время посещения Сайта. Жизненный цикл таких cookie-файлов не превышает одного года.</p>
+                    <h2>Аналитические файлы cookie</h2>
+                    <p>На сайте используются средства веб-аналитики с целью общего анализа использования сайта и получения исходных данных для улучшения товарных предложений. Полученная при этом информация может передаваться в анонимной форме на сервер службы веб-аналитики, сохраняться и обрабатываться там. Мы можем использовать аналитические инструменты и соответствующие cookie-файлы следующих поставщиков услуг:</p>
+                    <p>Google Analytics: <a target="_blank" href="https://policies.google.com/privacy?hl=en">Политика конфиденциальности Google</a></p>
+                    <p>Яндекс.Метрика: <a target="_blank" href="https://yandex.ru/legal/confidential/">Политика конфиденциальности Яндекс</a></p>
+                    <h2>Веб-маяки</h2>
+                    <p>Веб-маяки – небольшие графические изображения (также называемые «пиксельными тегами» или «чистыми GIF»), которые могут размещаться на веб-сайтах и внедряться в сервисы, приложения, сообщения и инструменты. Веб-маяки могут использоваться для различных целей, включая оценку эффективности работы Сайта, мониторинг количества посетителей и их поведения на Сайте, определение доли реально прочитанных электронных писем от общего числа всех отправленных писем, контроль эффективности рекламы и подсчёт количества фактически просмотренных страниц, статей и ссылок.</p>
+                    <h2>Аналогичные технологии для хранения информации</h2>
+                    <p>Аналогичные технологии для хранения информации – технологии, позволяющие записывать определённую информацию в кэш-память веб-браузера или в память устройства с помощью локальных объектов общего пользования или локально сохраняемых данных, таких как cookie-файлы формата Flash и HTML 5 и прочие элементы прикладного программного обеспечения для интернета.</p>
+                    <p>Эти технологии могут применяться во всех используемых веб-браузерах. В некоторых случаях управление использование локально сохраняемых данных с помощью веб-браузера в полном объёме невозможно и требует специальных инструментов.</p>
+                    <p>Подобные технологии хранения информации могут использоваться для защиты данных учетной записи пользователя или для выявления нестандартных действий при использовании браузера в целях предотвращения несанкционированного доступа к учетной записи или оценки эффективности функционирования Сайта, сервисов, приложений или инструментов.</p>
+                    <h2>Как можно разрешить или запретить использование cookie-файлов?</h2>
+                    <p>Большинство браузеров автоматически принимают cookie-файлы. На устройстве пользователь может удалить сохраненные cookie-файлы в любое время.</p>
+                    <p>В настройках браузера также можно запретить любые cookie-файлы или только определенные. Однако все браузеры отличаются друг от друга, поэтому более подробная информация о настройках для cookie-файлов приведена в разделе Help («Справка») браузера.</p>
+                    <p>Обращаем внимание на то, что, отключив cookie-файлы, воспользоваться некоторыми функциями, сервисами, инструментами и приложениями Сайта будет нельзя.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="popup-group">
+            <!-- popup-CallBack -->
+            <div class="popup-back-call">
+                <div class="popup-wrap">
+                    <div class="back-call-container">
+                        <div class="close-back-call">
+                            <img onclick="closeCallBack();" src="/css/img/svg/close.svg" alt="alt">
+                        </div>
+                        <div class="back-call-title">
+                            <img src="/css/img/svg/logo.svg" alt="alt">
+                            <div class="back-call-title_text">
+                                <h2>Обратный звонок</h2>
+                                <p>Оставьте свои контактные данные и наши<br> специалисты свяжутся с Вами в ближайшее время</p>
+                            </div>
+                        </div>
+                        <form action="#">
+                            <input name="name2" type="text" required placeholder="Имя">
+                            <input name="phone" type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <input name="send" type="submit" value="Отправить" class="btn-style modal-backCall btn-fon btn-mail">
+                        </form>
+                        <div class="personal-data">
+                            <p>Оставляя данные в этой форме Вы даете согласие на <a target="_blank" href="/pages/persinfo.html">обработку персональных данных</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup-CallBack -->
+
+            <!-- popup-application -->
+            <div class="popup-application">
+                <div class="popup-wrap">
+                    <div class="application-container">
+                        <div class="close-application">
+                            <img onclick="closeАpplication();" src="/css/img/svg/close.svg" alt="alt">
+                        </div>
+                        <div class="application-title">
+                            <img src="/css/img/svg/logo.svg" alt="alt">
+                            <div class="application-title_text">
+                                <h2>Заявка</h2>
+                                <p>Оставьте свои контактные данные и наши<br> специалисты свяжутся с Вами в ближайшее время</p>
+                            </div>
+                        </div>
+                        <form action="#">
+                            <input type="text" required placeholder="Имя">
+                            <input type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <input name="send" type="submit" value="Отправить" class="btn-style modal-backCall btn-fon btn-mail">
+                        </form>
+                        <div class="personal-data">
+                            <p>Оставляя данные в этой форме Вы даете согласие на <a target="_blank" href="/pages/persinfo.html">обработку персональных данных</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup-application -->
+
+            <!-- popup-consultation -->
+            <div class="popup-consultation">
+                <div class="popup-wrap">
+                    <div class="consultation-container">
+                        <div class="close-consultation">
+                            <img onclick="closeConsultation();" src="/css/img/svg/close.svg" alt="alt">
+                        </div>
+                        <div class="consultation-title">
+                            <img src="/css/img/svg/logo.svg" alt="alt">
+                            <div class="consultation-title_text">
+                                <h2>Консультация</h2>
+                                <p>Оставьте свои контактные данные и наши<br> специалисты свяжутся с Вами в ближайшее время</p>
+                            </div>
+                        </div>
+                        <form action="#">
+                            <input type="text" required placeholder="Имя">
+                            <input type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <input name="send" type="submit" value="Отправить" class="btn-style modal-backCall btn-fon btn-mail">
+                        </form>
+                        <div class="personal-data">
+                            <p>Оставляя данные в этой форме Вы даете согласие на <a target="_blank" href="/pages/persinfo.html">обработку персональных данных</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup-consultation -->
+            <!-- popup-nice email -->
+            <div class="popup-email modal_thanks">
+                <div class="popup-wrap">
+                    <div class="close-email">
+                        <img onclick="closeEmail();" src="/css/img/svg/close.svg" alt="alt">
+                    </div>
+                    <div class="popup-content">
+                        <img src="/css/img/svg/open-email.svg" alt="alt">
+                        <h2>Отправлено</h2>
+                        <p>Ваши данные приняты в работу</p>
+                    </div>
+                </div>
+            </div>
+            <!-- popup-nice email -->
+        </section>
+
+
+
+        <footer class="footer">
+            <div class="wrap">
+                <div class="footer-row">
+                    <div class="footer-logo">
+                        <div class="footer-logo-top">
+                            <img src="/css/img/svg/footer-logo.svg" alt="logo">
+                            <div class="line2"></div>
+                            <div class="footer-logo-top__text">
+                                <h3>Черноземье</h3>
+                                <p>сертифицированный партнер ГК СКАУТ</p>
+                            </div>
+                        </div>
+                        <div class="footer-logo-bottom">
+                            <p>© 2020 —ООО "СКАУТ Черноземье"</p>
+                        </div>
+                    </div>
+    
+                    <div class="footer-row2">
+                        <div class="footer-nav">
+                            <ul class="footer-nav__elem1">
+                                <li><a class="footer-nav__link" href="#">О компании</a></li>
+                                <li><a class="footer-nav__link" href="#">О системе</a></li>
+                                <li><a class="footer-nav__link" href="#">Каталог услуг</a></li>
+                            </ul>
+                            <ul class="footer-nav__elem2">
+                                <li><a class="footer-nav__link" href="#">Готовые решения</a></li>
+                                <li><a class="footer-nav__link" href="#">Новости</a></li>
+                                <li><a class="footer-nav__link" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="footer-contact">
+                            <a class="footer_number" href="#">8-800-201-3888</a>
+                            <a class="btn" href="#">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <a class="footer-bottom__web" href="#"><img src="/css/img/svg/logo-ww.svg" alt="logo"></a>
+                    <a class="footer-bottom__policy" href="#">Политика конфеденциальности</a>
+                </div>
+            </div>
+            <!-- Cookies -->
+        <?
+        if($_SESSION["user_ok_cock"] != '1')
+        {
+            echo'
+            <div class="cookie">
+                <div class="footer-cookie">
+                    <img src="/css/img/svg/x.svg" class="footer-cookie-x" alt="х">
+                    <p class="footer-cookie-p">Продолжая использовать наш сайт, вы принимаете <a target="_blank" href="/pages/cookie.html" class="footer-cookie-a">политику использования cookie-файлов.</a></p>
+                    <button class="footer-cookie-sgl" onclick="policyFunc(\'1\');">Принимаю</button>
+                </div>
+            </div>
+            ';
+        }
+        ?> 
+        <!-- Cookies -->
+        </footer>
+        <!-- JQ script -->
+        <script src="/js/libs/jquery-3.4.1.min.js"></script>
+        <script src="/js/libs/jquery.fancybox.min.js"></script>
+        <script src="/js/libs/jquery.maskedinput.min.js"></script>
+        <!-- JQ script -->
+        <script src="/js/burger.js"></script>
+        <script src="/js/popup.js"></script>
+        <script>
+            function policyFunc($cookie) {
+                $.ajax({
+                    type: 'POST',
+                    url: "/backend/acceptCookie.php",
+                    data: {"cookie": $cookie},
+                    response: 'text',
+                    success: function (data) {
+                        $('.cookie').fadeTo(500, 0);
+                        setTimeout(function () {
+                            $('.cookie').hide();
+                        }, 500);
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>

@@ -2,11 +2,43 @@
 @import '../common/media.scss';
 
 .work {
+
 }
+
 .work-container {
     padding-top: 33px;
-    padding-bottom: 130px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: .7s;
+    height: 0;
+    overflow-y: hidden;
 }
+.work-container_active {
+    padding-bottom: 130px;
+    transition: .7s;
+
+    opacity: 1;
+    pointer-events: all;
+    height: 1000px;
+    overflow-y: unset;
+}
+
+.open-work-btn {
+    display: block;
+}
+.open-work-btn_active {
+    display: none;
+}
+.close-work-btn {
+    display: none;
+}
+.close-work-btn_active {
+    display: block;
+}
+
 .work-title {
     display: flex;
     flex-direction: column;
