@@ -5,7 +5,7 @@ const slider2 = document.querySelector('.swiper-container2');
 
 let mySwiper1 = new Swiper(slider1, {
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 20,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
