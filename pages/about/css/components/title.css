@@ -1,3 +1,3 @@
-.monitor-title{font-family:HelveticaNeueCyr;font-style:normal;font-weight:normal;font-size:36px;line-height:120%;text-align:center;text-transform:uppercase;color:#0066B3}
+.monitor-title{font-family:HelveticaNeueCyr;font-style:normal;font-weight:normal;font-size:36px;line-height:120%;text-align:center;text-transform:uppercase;color:#0066B3}@media (max-width: 767px){.monitor-title{font-size:28px}}@media (max-width: 480px){.monitor-title{font-size:24px}}
 
 /*# sourceMappingURL=title.css.map */

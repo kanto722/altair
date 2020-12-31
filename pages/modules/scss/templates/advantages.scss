@@ -11,16 +11,6 @@
 }
 .advantages-title {
 	margin-bottom: 82px;
-	h2 {
-		font-family: HelveticaNeueCyr;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 36px;
-		line-height: 120%;
-		text-align: center;
-		text-transform: uppercase;
-		color: $title;
-	}
 }
 .advantages-block {
 	display: flex;
@@ -86,7 +76,7 @@
 //767px
 @include media-tablet {
 	.advantages {
-		padding-top: 60px;
+		padding-top: 40px;
 		padding-bottom: 0;
 	}
 	.advantages-block{
@@ -101,14 +91,12 @@
 			margin-right: 0;
 		}
 	}
+	.advantages-block_item img {
+	margin-bottom: 30px;
+	}
 }
 //480px
 @include media-mobile {
-	.advantages-title{
-		h2 {
-			font-size: 30px;
-		}
-	}
 }
 //320px
 @include media-mobile-small {

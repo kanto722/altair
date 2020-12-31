@@ -208,3 +208,64 @@ display: flex;
 
 
 //thanks modal
+
+
+//1200px
+@include media-laptop {
+
+}
+//992px
+@include media-tablet-horizontal {
+    
+}
+//767px
+@include media-tablet {
+    .modals-CallBack{
+        width: 100%;
+    }
+    .callback-block {
+        width: 100%;
+        height: 100%;;
+    }
+    .callback-block__close {
+        margin-bottom: 15px;
+    }
+    .callback-block__title {
+        margin-bottom: 30px;
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .form-bottom {
+        margin-top: 60px;
+    }
+    .callback-block_wrap {
+        padding: 14px 29px 46px 29px;
+    }
+}
+//480px
+@include media-mobile {
+
+}
+@include media-custom (375px){
+    .callback-block_wrap{
+        padding: 14px 20px 15px 20px;
+
+    }
+    .callback-block_wrap form input {
+        padding: 10px 15px;
+    }
+    .form-bottom {
+        margin-top: 34px;
+        p {
+            font-size: 10px;
+        }
+    }
+}
+//320px
+@include media-mobile-small {
+   
+}

@@ -68,13 +68,6 @@
 
 			&_text {
                 h2 {
-                    font-family: HelveticaNeueCyr;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 24px;
-                    line-height: 120%;
-                    color: $title;
-                    text-transform: uppercase;
                     margin-bottom: 39px;
                 }
 			}
@@ -110,13 +103,7 @@
             }
 			&_text {
                 h2 {
-                    font-family: HelveticaNeueCyr;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 24px;
-                    line-height: 120%;
-                    color: $title;
-                    text-transform: uppercase;
+
                     margin-bottom: 79px;
                 }
 			}
@@ -156,12 +143,7 @@
             flex-direction: row;
             justify-content: center;
             h2 {
-                font-family: HelveticaNeueCyr;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 24px;
-                line-height: 120%;
-                text-transform: uppercase;
+
                 color: $title;
             }
 		}
@@ -206,13 +188,6 @@
             width: 100%;
             padding-top: 1px;
             h2 {
-                font-family: HelveticaNeueCyr;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 24px;
-                line-height: 120%;
-                text-transform: uppercase;
-                color: $title;
                 margin-bottom: 40px;
             }
             p {
@@ -231,13 +206,6 @@
             flex-direction: column;
             width: 100%;
             h2 {
-                font-family: HelveticaNeueCyr;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 24px;
-                line-height: 120%;
-                text-transform: uppercase;
-                color: $title;
                 margin-bottom: 15px;
             }
             li {
@@ -376,7 +344,40 @@
 }
 //480px
 @include media-mobile {
+    .cart-item1__left_title {
+        width: 60px;
+        height: 60px;
+        transform: translateY(-30px);
 
+        h2 {
+            font-size: 20px;
+        }
+    }
+    .cart-item1__right_title {
+        width: 60px;
+        height: 60px;
+        transform: translateY(-30px);
+
+        h2 {
+            font-size: 20px;
+        } 
+    }
+    .cart-item2__title {
+        width: 60px;
+        height: 60px;
+        transform: translateY(-30px);
+        h2 {
+            font-size: 20px;
+        } 
+    }
+    .cart-item3__title {
+        width: 60px;
+        height: 60px;
+        transform: translateY(-30px);
+        h2 {
+            font-size: 20px;
+        } 
+    }
 }
 //320px
 @include media-mobile-small {

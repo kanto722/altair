@@ -6,14 +6,6 @@
     padding-top: 88px;
     &__title {
         h2 {
-            font-family: HelveticaNeueCyr;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: 120%;
-            text-align: center;
-            text-transform: uppercase;
-            color: $title;
             margin-bottom: 44px;
         }
         p{
@@ -116,12 +108,6 @@
     }
     &_text {
         h2 {
-            font-family: HelveticaNeueCyr;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: 120%;
-            color: $title;
             margin-bottom: 23px;
         }
         p {
@@ -247,9 +233,7 @@
 @include media-mobile {
     .program {
         &__title {
-            h2 {
-                font-size: 30px;
-            }
+
             p {
                 max-width: 100%;
             }
@@ -283,9 +267,6 @@
             width: 100%;
         }
         &_text {
-            h2 {
-                font-size: 28px;
-            }
             p {
                 font-size: 16px;
             }
