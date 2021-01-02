@@ -243,14 +243,9 @@
       }
   }
   .car-questions__text:nth-child(1) {
-      padding-bottom: 20px;
+	  padding-top: 20px;
   }
-  .car-questions__text:nth-child(5) {
-    padding-bottom: 20px;
-    }
-    .car-questions__text:nth-child(9) {
-        padding-bottom: 20px;
-    }
+
     .border {
         border-top: 1px solid #BDBDBD;
         border-bottom: 1px solid #BDBDBD;
@@ -314,13 +309,7 @@
 		&_text4 {
 			h2{
 				width: 470px;
-				font-family: HelveticaNeueCyr;
-				font-style: normal;
-				font-weight: normal;
-				font-size: 24px;
-				line-height: 120%;
-				text-transform: uppercase;
-				color: $title;
+
 				margin-bottom: 27px;
 			}
 			p {
@@ -546,9 +535,7 @@
 			text-align: center;
 		}
 	}
-	.car-questions__hidden-content {
-		padding-top: 15px;
-	}
+
 	//b
 	.car-bottom-content {
 		margin-top: 50px;
@@ -767,6 +754,10 @@
 				}
 			}
 		}
+	}
+	.car-item:nth-child(4){
+		padding: 0px 5px 0px 5px;
+
 	}
 }
 @include media-custom (375px){

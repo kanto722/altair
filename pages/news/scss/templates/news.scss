@@ -91,7 +91,15 @@
                 background: #DFE3F2;
                 cursor: pointer;
             }
-		}
+            a:active {
+                background: #0066B3;
+                color: #FFFFFF;
+            }
+        }
+        &_btn:hover {
+            box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px rgba(166, 171, 189, 0.5);
+        }
+
 }
 .content-item:nth-child(3) {
     margin-right: 0;

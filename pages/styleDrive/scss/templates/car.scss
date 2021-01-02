@@ -807,6 +807,21 @@
 	}
 	.car-bottom{
 		padding: 60px 10px 60px 10px;
+		&-content {
+			&__left {
+				a {
+					font-size: 18px;
+				}
+			}
+			&__right {
+				li {
+					margin-bottom: 10px;
+					a {
+						font-size: 18px;
+					}
+				}
+			}
+		}
 	}
 }
 //320px

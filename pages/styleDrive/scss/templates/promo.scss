@@ -205,9 +205,10 @@
     .promo-content{
         &__block {
             &_right {
-                iframe {
-                    width: 450px;
-                    height: 300px;
+                a {
+                   img {
+                       width: 100%;
+                   }
                 }
             }
         }
@@ -223,6 +224,11 @@
                     height: 250px;
                 }
             }
+        }
+    }
+    .promo-title{
+        p {
+            font-size: 18px;
         }
     }
 }

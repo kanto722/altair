@@ -127,7 +127,16 @@
 }
 
 
-
+@include media-custom (1280px){
+    .info-container{
+        &__content {
+            &_wrap:nth-child(2){
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
 @include media-custom (1267px) {
     .info-container{
         &__content {

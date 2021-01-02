@@ -72,6 +72,7 @@
     li {
         padding-bottom: 20px;
     }
+    
     &__link {
         outline: none;
         text-decoration: none;
@@ -193,6 +194,10 @@
     }
     .footer-logo {
         margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     .footer-logo-top {
         padding-bottom: 15px;

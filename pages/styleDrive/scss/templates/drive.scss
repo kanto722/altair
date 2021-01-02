@@ -282,6 +282,13 @@
 @include media-mobile {
 
 }
+@include media-custom (375px){
+    .drive-element {
+        &__item {
+            margin-right: 31px;
+        }
+    }
+}
 //320px
 @include media-mobile-small {
    

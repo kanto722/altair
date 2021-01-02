@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- slider-swiper-style -->
+    <link rel="stylesheet" href="/css/libs/jquery.fancybox.min.css">
 
 
 </head>
@@ -200,9 +201,9 @@
                         <div class="car__content_slider">
                             <div class="swiper-container1">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="/pages/control/css/img/slider-1.jpg" alt="alt"></div>
-                                    <div class="swiper-slide"><img src="/pages/control/css/img/slider-1.jpg" alt="alt"></div>
-                                    <div class="swiper-slide"><img src="/pages/control/css/img/slider-1.jpg" alt="alt"></div>
+                                    <div class="swiper-slide"><a data-fancybox="gallery" href="/pages/control/css/img/slider-1.jpg"><img src="/pages/control/css/img/slider-1.jpg" alt="alt"></a></div>
+                                    <div class="swiper-slide"><a data-fancybox="gallery" href="/pages/control/css/img/slider-1.jpg"><img src="/pages/control/css/img/slider-1.jpg" alt="alt"></a></div>
+                                    <div class="swiper-slide"><a data-fancybox="gallery" href="/pages/control/css/img/slider-1.jpg"><img src="/pages/control/css/img/slider-1.jpg" alt="alt"></a></div>
                                 </div>
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-button-next"></div>
@@ -224,7 +225,7 @@
                             </div>
                         </div>
                         <div class="car-item__right">
-                            <img class="car-item-img2" src="/pages/control/css/img/car-item2.jpg" alt="item1">
+                            <a data-fancybox="gallery" href="/pages/control/css/img/car-item2.jpg"><img class="car-item-img2" src="/pages/control/css/img/car-item2.jpg" alt="item1"></a>
                         </div>
                     </div>
                     <div class="car-item3">
@@ -236,7 +237,7 @@
                                 <h2>Оценивать качества вождения</h2>
                                 <p>В решении для контроля и оптимизации склада настраиваются различные составляющие для взвешенной оценки качества вождения с учетом специфики работы склада. Реализована возможность определять, какая скорость допустима, а какая является критической.</p>
                             </div>
-                            <img src="/pages/control/css/img/car-item3.jpg" alt="item1">
+                            <a data-fancybox="gallery" href="/pages/control/css/img/car-item3.jpg"><img src="/pages/control/css/img/car-item3.jpg" alt="item1"></a>
                         </div>
                         <div class="car-item3__right">
                             <div class="car-item3__left_title">
@@ -246,7 +247,7 @@
                                 <h2>Обозначать склады и геозоны на карте</h2>
                                 <p>ТС помощью редактора геозон есть возможность отметить на карте все склады и прилегающую территорию компании.</p>
                             </div>
-                            <img src="/pages/control/css/img/car-item4.jpg" alt="item1">
+                            <a data-fancybox="gallery" href="/pages/control/css/img/car-item4.jpg"><img src="/pages/control/css/img/car-item4.jpg" alt="item1"></a>
                         </div>
                     </div>
                     <div class="car-item">
@@ -348,12 +349,11 @@
             </div>
         </div>
     </section>
-
-    <section class="request" >
+    <section class="request">
         <div class="wrap">
             <div class="request-container">
                 <div class="request-img">
-                    <img src="/pages/control/css/img/request1.png" alt="alt">
+                    <img src="/css/img/request1.png" alt="alt">
                 </div>
                 <div class="request-form">
                     <div class="request-form__title">
@@ -362,9 +362,9 @@
                     <form action="#" class="request-form__content">
                         <input type="text" placeholder="Имя" required>
                         <input type="text" placeholder="Способ связи">
-                        <textarea name="" id="№" cols="30" rows="10" placeholder="Коментарий"></textarea>
+                        <textarea name="" id="#" cols="30" rows="10" placeholder="Коментарий"></textarea>
                         <div class="request-form__content_btn">
-                            <a class="monitor-btn">Отправить</a>
+                            <a><input type="submit" value="Отправить"></a>
                             <p>Оставляя данные в этой форме Вы даете согласие на обработку персональных данных</p>
                         </div>
                     </form>
@@ -471,6 +471,7 @@
     <!-- slider-swiper-script -->
     <script src="/js/libs/jquery-3.5.1.min.js"></script>
     <script src="/js/libs/jquery.maskedinput.min.js"></script>
+    <script src="/js/libs/jquery.fancybox.min.js"></script>
     <script src="/pages/control/js/burger.js"></script>
     <script src="/pages/control/js/swiper.js"></script>
 </body>

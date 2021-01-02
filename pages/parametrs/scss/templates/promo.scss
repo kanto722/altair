@@ -74,6 +74,9 @@
 }
 //767px
 @include media-tablet {
+    .promo{
+        padding-top: 40px;
+    }
     .promo-block{
         &__content {
             padding: 42px 30px 42px 30px;

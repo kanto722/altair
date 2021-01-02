@@ -49,7 +49,7 @@
 .btn {
 }
 .promo-container-video {
-cursor:pointer;
+    cursor:pointer;
     iframe {
         max-width: 609px;
         max-height: 366px;
@@ -105,9 +105,10 @@ cursor:pointer;
         }
     }
     .promo-container-video{
-        iframe {
-            max-width: 450px;
-            max-height: 250px;
+        a {
+            img {
+                width: 100%;
+            }
         }
     }
     .promo-container-video{
