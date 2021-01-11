@@ -56,6 +56,9 @@
 			border-left: 1px solid #BDBDBD;
 			border-bottom-left-radius: 10px;
 		}
+		a:nth-child(6) {
+			border-bottom-right-radius: 10px;
+		}
 		&__block-elem {
 
 			box-sizing: border-box;
@@ -133,7 +136,7 @@
 		}
 		a:nth-child(4){
 			border-left: 1px solid #BDBDBD;
-			border-bottom-left-radius: 10px;
+			border-bottom-left-radius: 0px;
 		}
 		a:nth-child(5){
 			border-left: 1px solid #BDBDBD;

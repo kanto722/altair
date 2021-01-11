@@ -8,7 +8,7 @@ Error: File to import not found or unreadable: ./variable.
 3: 
 4: //news
 5: .news {
-6: }
+6:     padding-top: 100px;
 
 Backtrace:
 C:\Users\User-52\Desktop\test\pages\news\scss\templates\news.scss:1
@@ -49,4 +49,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ./variable.\A        Load path: C:/Users/User-52/Desktop/test/pages/news/scss/templates\A         on line 1 of C:\Users\User-52\Desktop\test\pages\news\scss\templates\news.scss\A \A 1: @import './variable';\A 2: @import './common/media';\A 3: \A 4: //news\A 5: .news {\A 6: }"; }
+  content: "Error: File to import not found or unreadable: ./variable.\A        Load path: C:/Users/User-52/Desktop/test/pages/news/scss/templates\A         on line 1 of C:\Users\User-52\Desktop\test\pages\news\scss\templates\news.scss\A \A 1: @import './variable';\A 2: @import './common/media';\A 3: \A 4: //news\A 5: .news {\A 6:     padding-top: 100px;"; }

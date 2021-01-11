@@ -2,7 +2,7 @@
 @import '../common/media.scss';
 
 .promo {
-    padding-top: 132px;
+    padding-top: 100px;
 }
 .promo-container {
     display: flex;
@@ -12,7 +12,7 @@
 .promo-title {
     margin-bottom: 50px;
     h2 {
-
+        font-weight: 550;   
     }
     p {
         text-align: center;

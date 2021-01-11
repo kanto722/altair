@@ -283,8 +283,11 @@
 @include media-custom (382px) {
     .system-container-content{
         &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             &_img {
-                transform: translate(90px, -128px);
+                transform: translate(0px, -130px);
 
             }
             &_title {
@@ -310,8 +313,11 @@
     }
     .system-container-content2{
         &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             &_img {
-                transform: translate(90px, -128px);
+                transform: translate(0px, -130px);
 
             }
             &_title {
@@ -324,24 +330,6 @@
             }
             &_text {
                 text-align: center;
-            }
-        }
-    }
-}
-@include media-custom (350px) {
-    .system-container-content{
-        &__item {
-            &_img {
-                transform: translate(68px, -128px);
-
-            }
-        }
-    }
-
-    .system-container-content2{
-        &__item {
-            &_img {
-                transform: translate(68px, -128px);
             }
         }
     }

@@ -3,7 +3,7 @@
 
 
 .promo {
-    padding-top: 132px;
+    padding-top: 100px;
 }
 .promo-container {
     display: flex;
@@ -227,6 +227,7 @@
         }
     }
     .promo-title{
+        text-align: center;
         p {
             font-size: 18px;
         }

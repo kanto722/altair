@@ -69,6 +69,13 @@
 			&_text {
                 h2 {
                     margin-bottom: 39px;
+                    font-family: HelveticaNeueCyr;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 120%;
+                    text-transform: uppercase;
+                    color: $title;
                 }
 			}
 		}
@@ -103,7 +110,13 @@
             }
 			&_text {
                 h2 {
-
+                    font-family: HelveticaNeueCyr;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 120%;
+                    text-transform: uppercase;
+                    color: $title;
                     margin-bottom: 79px;
                 }
 			}
@@ -143,7 +156,12 @@
             flex-direction: row;
             justify-content: center;
             h2 {
-
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 120%;
+                text-transform: uppercase;
                 color: $title;
             }
 		}
@@ -189,6 +207,13 @@
             padding-top: 1px;
             h2 {
                 margin-bottom: 40px;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 120%;
+                text-transform: uppercase;
+                color: $title;
             }
             p {
                 width: 489px;
@@ -207,6 +232,13 @@
             width: 100%;
             h2 {
                 margin-bottom: 15px;
+                font-family: HelveticaNeueCyr;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 120%;
+                text-transform: uppercase;
+                color: $title;
             }
             li {
                 font-family: HelveticaNeueCyr;
