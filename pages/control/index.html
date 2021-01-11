@@ -1,3 +1,7 @@
+<?
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -43,21 +47,21 @@
                 <div class="header-row">
                     <nav class="header-nav">
                         <ul class="header-nav__block">
-                            <li><a class="header-nav__link" href="/pages/about/index.html">О компании</a></li>
-                            <li><a class="header-nav__link" href="/pages/skayt/index.html">СКАУТ</a></li>
+                            <li><a class="header-nav__link" href="/pages/about/index.php">О компании</a></li>
+                            <li><a class="header-nav__link" href="/pages/skayt/index.php">СКАУТ</a></li>
                             <li><a class="header-nav__link drop-click">Готовые решения</a>
                                 <div class="drop-nav">
-                                    <a href="/pages/monitor/index.html">Базовый мониторинг</a>
-                                    <a href="/pages/fuell/index.html">Контроль топлива</a>
-                                    <a href="/pages/technic/index.html">Контроль спецтехники</a>
-                                    <a href="/pages/styleDrive/index.html">Контроль стиля вождения</a>
-                                    <a href="/pages/control/index.html">Контроль складской техники</a>
-                                    <a href="/pages/parametrs/index.html">Контроль других параметров</a>
+                                    <a href="/pages/monitor/index.php">Базовый мониторинг</a>
+                                    <a href="/pages/fuell/index.php">Контроль топлива</a>
+                                    <a href="/pages/technic/index.php">Контроль спецтехники</a>
+                                    <a href="/pages/styleDrive/index.php">Контроль стиля вождения</a>
+                                    <a href="/pages/control/index.php">Контроль складской техники</a>
+                                    <a href="/pages/parametrs/index.php">Контроль других параметров</a>
                                 </div>
                             </li>
-                            <li><a class="header-nav__link" href="/pages/modules/index.html">Оборудование</a></li>
-                            <li><a class="header-nav__link" href="/pages/news/index.html">Новости</a></li>
-                            <li><a class="header-nav__link" href="/pages/contact/index.html">Контакты</a></li>
+                            <li><a class="header-nav__link" href="/pages/modules/index.php">Оборудование</a></li>
+                            <li><a class="header-nav__link" href="/pages/news/index.php">Новости</a></li>
+                            <li><a class="header-nav__link" href="/pages/contact/index.php">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -271,8 +275,8 @@
                         </div>
                         <div class="car-bottom-content">
                             <div class="car-bottom-content__left">
-                                <a href="#">СКАУТ-Платформа</a>
-                                <a href="#">Модуль мониторинга МТ-700</a>
+                                <a target="_blank" rel="nofollow" href="https://scout-gps.ru/programmnoe-obespechenie/">СКАУТ-Платформа</a>
+                                <a href="/pages/parametrs/index.php">Модуль мониторинга МТ-700</a>
                             </div>
                             <div class="car-bottom-content__right">
                                 <a href="#">Устройство идентификации водителя</a>
@@ -280,7 +284,7 @@
                             </div>
                         </div>
                         <div class="car-bottom-content__btn">
-                            <a class="btn">Оставить заявку</a>
+                            <a onclick="openCallBack();" class="btn">Оставить заявку</a>
                         </div>
                     </div>
                 </div>
@@ -314,32 +318,32 @@
                 </div>
                 <div class="more-content">
                     <div class="more-content__block">
-                        <a href="#">
+                        <a href="/pages/monitor/index.html">
                             <div class="more-content__block-elem">
                                 <p>Базовый мониторинг</p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/pages/fuell/index.html">
                             <div class="more-content__block-elem">
                                 <p>Контроль топлива</p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/pages/technic/index.html">
                             <div class="more-content__block-elem">
                                 <p>Контроль спецтехники</p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/pages/styleDrive/index.html">
                             <div class="more-content__block-elem">
                                 <p>Контроль стиля вождения</p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/pages/control/index.html">
                             <div class="more-content__block-elem">
                                 <p>Контроль складской техники</p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="/pages/parametrs/index.html">
                             <div class="more-content__block-elem">
                                 <p>Индивидуальные решения</p>
                             </div>
@@ -365,7 +369,7 @@
                         <textarea name="" id="#" cols="30" rows="10" placeholder="Коментарий"></textarea>
                         <div class="request-form__content_btn">
                             <a><input type="submit" value="Отправить"></a>
-                            <p>Оставляя данные в этой форме Вы даете согласие на обработку <a target="_blank" href="#">персональных данных</a></p>
+                            <p>Оставляя данные в этой форме Вы даете согласие на обработку <a target="_blank" href="/pages/policy/persinfo.php">персональных данных</a></p>
                         </div>
                     </form>
                 </div>
@@ -386,32 +390,67 @@
                         </div>
                         <div class="content__text_number">
                             <h3>Телефон:</h3>
-                            <a href="#">8-800-201-38-88</a>
-                            <a href="#">8 (473) 260-23-35</a>
+                            <a href="tel:+78002013888">8-800-201-38-88</a>
+                            <a href="tel:+74732602335">8 (473) 260-23-35</a>
                         </div>
                         <div class="content__text_email">
                             <h3>Email:</h3>
-                            <a href="#">mail@scoutvrn.ru</a>
+                            <a href="malito:mail@scoutvrn.ru">mail@scoutvrn.ru</a>
                         </div>
                         <div class="content__text_work">
                             <h3>график работы</h3>
-                            <p>пн-пт с 9:00 до18:00</p>
+                            <p>пн-пт с 9:00 до 18:00</p>
                         </div>
                         <div class="content__text_support">
                             <h3>техническая поддержка</h3>
                             <div class="content__text_support-social">
-                                <a href="#">8 (960) 102-32-15</a>
+                                <a href="tel:+79601023215">8 (960) 102-32-15</a>
                                 <a href="#"><img src="/pages/control/css/img/svg/phone.svg" alt="alt"></a>
                                 <a href="#"><img src="/pages/control/css/img/svg/tg.svg" alt="alt"></a>
                                 <a href="#"><img src="/pages/control/css/img/svg/viber.svg" alt="alt"></a>
                             </div>
                             <p>в нерабочее время время доступна по эл.адресу:</p>
-                            <a href="#">tp@scoutvrn.ru</a>
+                            <a href="malito:tp@scoutvrn.ru">tp@scoutvrn.ru</a>
                         </div>
                     </div>
                     <div class="content__maps" id="maps">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="modals">
+        <div class="modals-CallBack">
+            <div class="callback-container">
+                <div class="callback-block">
+                    <div class="callback-block_wrap">
+                        <div class="callback-block__close">
+                            <img onclick="closeCallBack();" src="/css/img/svg/close.svg" alt="alt">
+                        </div>
+                        <div class="callback-block__title">
+                            <h2>Обратный звонок</h2>
+                            <p>Оставьие свои контактные данные и наши специалисты с Вами свяжутся в ближайшее время</p>
+                        </div>
+                        <form action="#">
+                            <input class="callback-name" name="name2" type="text" required placeholder="Имя">
+                            <input class="callback-number number-mask" name="phone" type="text" required placeholder="+7(_ _ _)_ _ _-_ _ _-_ _">
+                            <div class="form-bottom">
+                                <input name="send" type="submit" value="Отправить"class="btn-callback">
+                                <p>Оставляя данные в этой форме Вы даете согласие на <a href="/pages/policy/persinfo.php">обработку персональных данных</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modals-thanks">
+            <div class="thanks__close">
+                <img onclick="closeThanks();" src="/css/img/svg/close.svg" alt="alt">
+            </div>
+            <div class="thanks__content">
+                <img src="/css/img/svg/modal-mail.svg" alt="alt">
+                <h2>Отправлено</h2>
+                <p>Ваши данные приняты в работу</p>
             </div>
         </div>
     </section>
@@ -435,20 +474,20 @@
                 <div class="footer-row2">
                     <div class="footer-nav">
                         <ul class="footer-nav__elem1">
-                            <li><a class="footer-nav__link" href="/pages/about/index.html">О компании</a></li>
-                            <li><a class="footer-nav__link" href="/pages/skayt/index.html">СКАУТ</a></li>
-                            <li><a class="footer-nav__link" href="/pages/modules/index.html">Оборудование</a></li>
-                            <li><a class="footer-nav__link" href="/pages/news/index.html">Новости</a></li>
-                            <li><a class="footer-nav__link" href="/pages/contact/index.html">Контакты</a></li>
+                            <li><a class="footer-nav__link" href="/pages/about/index.php">О компании</a></li>
+                            <li><a class="footer-nav__link" href="/pages/skayt/index.php">СКАУТ</a></li>
+                            <li><a class="footer-nav__link" href="/pages/modules/index.php">Оборудование</a></li>
+                            <li><a class="footer-nav__link" href="/pages/news/index.php">Новости</a></li>
+                            <li><a class="footer-nav__link" href="/pages/contact/index.php">Контакты</a></li>
                         </ul>
                         <ul class="footer-nav__elem2">
                             <li><a class="footer-nav__link">Готовые решения</a></li>
-                            <li><a class="footer-nav__link" href="/pages/monitor/index.html">Базовый мониторинг</a></li>
-                            <li><a class="footer-nav__link" href="/pages/fuell/index.html">Контроль топлива</a></li>
-                            <li><a class="footer-nav__link" href="/pages/technic/index.html">Контроль спецтехники</a></li>
-                            <li><a class="footer-nav__link" href="/pages/styleDrive/index.html">Контроль стиля вождения</a></li>
-                            <li><a class="footer-nav__link" href="/pages/control/index.html">Контроль складской техники</a></li>
-                            <li><a class="footer-nav__link" href="/pages/parametrs/index.html">Контроль других параметров</a></li>
+                            <li><a class="footer-nav__link" href="/pages/monitor/index.php">Базовый мониторинг</a></li>
+                            <li><a class="footer-nav__link" href="/pages/fuell/index.php">Контроль топлива</a></li>
+                            <li><a class="footer-nav__link" href="/pages/technic/index.php">Контроль спецтехники</a></li>
+                            <li><a class="footer-nav__link" href="/pages/styleDrive/index.php">Контроль стиля вождения</a></li>
+                            <li><a class="footer-nav__link" href="/pages/control/index.php">Контроль складской техники</a></li>
+                            <li><a class="footer-nav__link" href="/pages/parametrs/index.php">Контроль других параметров</a></li>
 
                         </ul>
                     </div>
@@ -461,9 +500,25 @@
             </div>
             <div class="footer-bottom">
                 <a class="footer-bottom__web" target="_blank" href="https://ww.net.ru/"><img src="/css/img/svg/logo-ww.svg" alt="logo"></a>
-                <a class="footer-bottom__policy" href="#">Политика конфеденциальности</a>
+                <a class="footer-bottom__policy" href="/pages/policy/policy.php">Политика конфеденциальности</a>
             </div>
         </div>
+        <!-- Cookies -->
+        <?
+        if($_SESSION["user_ok_cock"] != '1')
+        {
+            echo'
+            <div class="cookie">
+                <div class="footer-cookie">
+                    <img src="/css/img/svg/x.svg" class="footer-cookie-x" alt="х">
+                    <p class="footer-cookie-p">Продолжая использовать наш сайт, вы принимаете <a target="_blank" href="/pages/cookie.php" class="footer-cookie-a">политику использования cookie-файлов.</a></p>
+                    <button class="footer-cookie-sgl" onclick="policyFunc(\'1\');">Принимаю</button>
+                </div>
+            </div>
+            ';
+        }
+        ?> 
+        <!-- Cookies -->
     </footer>
     <!-- slider-swiper-script -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -474,5 +529,21 @@
     <script src="/js/libs/jquery.fancybox.min.js"></script>
     <script src="/pages/control/js/burger.js"></script>
     <script src="/pages/control/js/swiper.js"></script>
+    <script>
+        function policyFunc($cookie) {
+            $.ajax({
+                type: 'POST',
+                url: "/backend/acceptCookie.php",
+                data: {"cookie": $cookie},
+                response: 'text',
+                success: function (data) {
+                    $('.cookie').fadeTo(500, 0);
+                    setTimeout(function () {
+                        $('.cookie').hide();
+                    }, 500);
+                }
+            })
+        }
+    </script>
 </body>
 </html>
